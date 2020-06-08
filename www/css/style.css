@@ -1,0 +1,97 @@
+
+#push-button {
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #668ad8;/*ボタン色*/
+  color: #FFF;
+  border-bottom: solid 4px #627295;
+  border-radius: 3px;
+}
+#push-button:active {
+  /*ボタンを押したとき*/
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);/*下に動く*/
+  border-bottom: none;/*線を消す*/
+}
+
+#pop-button {
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #696969;/*ボタン色*/
+  color: #FFF;
+  border-bottom: solid 4px #808080;
+  border-radius: 3px;
+}
+#pop-button:active {
+  /*ボタンを押したとき*/
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);/*下に動く*/
+  border-bottom: none;/*線を消す*/
+}
+
+/*問題*/
+.que-scale {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+.que-scale:before,
+.que-scale:after {
+	-webkit-box-sizing: inherit;
+	        box-sizing: inherit;
+}
+.que-scale .box {
+	width: 90%;
+	margin: 2em auto;
+	text-align: left;
+	border: 1px solid white;
+	border-radius: 3px;
+	background: #ffffff;
+}
+.que-scale input[type=radio] {
+	display: none;
+}
+.que-scale label:focus,
+.que-scale label:hover,
+.que-scale label:active,
+.que-scale input:checked + label {
+	color: #da3c41;
+}
+.que-scale label:focus:before,
+.que-scale label:hover:before,
+.que-scale label:active:before,
+.que-scale input:checked + label:before {
+	border-color: #da3c41;
+	background: #ffffff;
+}
+.que-scale label {
+	font-size: 1em;
+	font-weight: bold;
+	line-height: 1;
+	position: relative;
+	display: block;
+	overflow: hidden;
+	padding: 1em 1em 1em 3em;
+	cursor: pointer;
+	-webkit-transition: all 0.15s ease;
+	        transition: all 0.15s ease;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	background: #ffffff;
+}
+.que-scale label:before {
+	position: absolute;
+	top: 1em;
+	left: 1em;
+	width: 10px;
+	height: 10px;
+	content: '';
+	border: 0.2em solid #cccccc;
+	border-radius: 50%;
+}
+.que-scale input:checked + label:before {
+	border-color: #da3c41;
+	background: #da3c41;
+}
+
