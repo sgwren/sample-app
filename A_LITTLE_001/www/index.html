@@ -1,0 +1,305 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+  <script src="components/loader.js"></script>
+  <script src="lib/onsenui/js/onsenui.min.js"></script>
+
+  <link rel="stylesheet" href="components/loader.css">
+  <link rel="stylesheet" href="lib/onsenui/css/onsenui.css">
+  <link rel="stylesheet" href="lib/onsenui/css/onsen-css-components.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script>
+    // Page init event
+    document.addEventListener('init', function(event) {
+      var page = event.target;
+      
+      if (page.matches('#first-page')) {
+        page.querySelector('#push-button').onclick = function() {
+          document.querySelector('#navigator').pushPage('page2.html');
+          };
+          } 
+      else if (page.matches('#second-page')) {
+        page.querySelector('#pop-button').onclick = function() {
+          document.querySelector('#navigator').popPage();
+          };
+          }
+          
+      if (page.matches('#second-page')) {
+        page.querySelector('#push-button').onclick = function() {
+          document.querySelector('#navigator').pushPage('page3.html');
+          };
+          } 
+      else if (page.matches('#third-page')) {
+        page.querySelector('#pop-button').onclick = function() {
+          document.querySelector('#navigator').popPage();
+          };
+          }
+      });
+
+      // document.querySelector('ons-button').addEventListener('click', () => {
+        
+      //   const q1 = document.getElementById('radio1').checked();
+      //   const q2 = document.getElementById('radio3').checked();
+      //   const q3 = document.getElementById('radio5').checked();
+      //   const q4 = document.getElementById('radio7').checked();
+      //   const q5 = document.getElementById('radio9').checked();
+
+      //   console.log (q1);
+      //  }
+
+// const yes = 
+//     if([i].checked == 10) {
+//       console.log("選択された値：", yes[i].value);
+//       }else if(yes[i].checked >= 8){
+//         console.log("選択された値：", yes[i].value);
+//       }else if(yes[i].checked >= 5){
+//         console.log("選択された値：", yes[i].value);
+//       }else if(yes[i].checked >= 3){
+//         console.log("選択された値：", yes[i].value);
+//       }else if(yes[i].checked >= 0){
+//         console.log("選択された値：", yes[i].value);
+                      
+// function func1() {
+
+//   var yes = document.getElementByid("yes").checked
+//   for(var i = 0; i < yes.length; i++){
+//     if(yes[i].checked == 10) {
+//       console.log("選択された値：", yes[i].value);
+//       }else if(yes[i].checked >= 8){
+//         console.log("選択された値：", yes[i].value);
+//       }else if(yes[i].checked >= 5){
+//         console.log("選択された値：", yes[i].value);
+//       }else if(yes[i].checked >= 3){
+//         console.log("選択された値：", yes[i].value);
+//       }else if(yes[i].checked >= 0){
+//         console.log("選択された値：", yes[i].value);
+//       }
+//       }
+//       }
+
+
+
+    if (ons.platform.isIPhoneX()) {
+      document.documentElement.setAttribute('onsflag-iphonex-portrait', '');
+      document.documentElement.setAttribute('onsflag-iphonex-landscape', '');
+    }
+
+    document.querySelector('ons-button').addEventListener('click', () => {
+        
+        var q1 = document.getElementById('radio1').checked();
+        var q2 = document.getElementById('radio3').checked();
+        var q3 = document.getElementById('radio5').checked();
+        var q4 = document.getElementById('radio7').checked();
+        var q5 = document.getElementById('radio9').checked();
+
+        var qYes = [q1 ,q2 ,q3 ,q4 ,q5];
+        for(var i = 0; i < qYes.length; i++){
+          if(qYes[i].checked) {
+            console.log("選択された値：", qYes[i].value);
+        }
+        }
+    });
+        // console.log (q1);
+        // let selectedQuestion;
+        // let i = qYes.checked();
+
+        // let izonndo = 0;
+        // for(let i=0;i<qYes.length;i++){
+        //   if(qYes[i]==="yes"){
+        //     izonndo+=10;
+        //   }
+        // }
+
+        // for(i=0; ; i ++);
+
+        // if(qYes.checked() == 10) {
+        //   selectedQuestion = 100;
+        //  }else if(qYes.checked() >= 8){
+        //    selectedQuestion = 90;
+        //  }else if(qYes.checked() >= 5){
+        //    selectedQuestion = 70;
+        //  }else if(qYes.checked() >= 3){
+        //    selectedQuestion = 50;
+        //  }else if(qYes.checked() >= 0){
+        //    selectedQuestion = 0;
+        //  }
+      // });
+  </script>
+</head>
+<body>
+  <ons-navigator id="navigator" page="page1.html"></ons-navigator>
+
+  <ons-template id="page1.html">
+    <ons-page id="first-page">
+      <ons-toolbar>
+        <div class="center">A LITTLE</div>
+      </ons-toolbar>
+
+      <div class="content" style="text-align: center">
+        <h1>スマホ依存度チェック</h1>
+
+        <h2>１問目</h2>
+        <h2>おふろに入るときにスマホは</h2>
+        <div class="que-scale">
+          <div class="box">
+            <input type="radio" id="radio1" name="question1" value="yes"/>
+            <label for="radio1">お風呂内に持って入る</label><br>
+            <input type="radio" id="radio2" name="question1" value="no"/>
+            <label for="radio2">持って入らない</label>
+           </div>
+         </div>
+         <br>
+          
+         <h2>２問目</h2>
+        <h2>電車に乗っていてスマホを忘れたことに気づいたら</h2>
+        <div class="que-scale">
+          <div class="box">
+            <input type="radio" id="radio3" name="question2" value="yes"/>
+            <label for="radio3">取りに帰る</label><br>
+            <input type="radio" id="radio4" name="question2" value="no"/>
+            <label for="radio4">そのまま出かける</label>
+           </div>
+         </div>
+         <br>
+
+         <h2>３問目</h2>
+        <h2>目的がなくても、ついスマホを触ってしまう</h2>
+        <div class="que-scale">
+          <div class="box">
+            <input type="radio" id="radio5" name="question3" value="yes"/>
+            <label for="radio5">はい</label><br>
+            <input type="radio" id="radio6" name="question3" value="no"/>
+            <label for="radio6">いいえ</label>
+           </div>
+         </div>
+         <br>
+
+         <h2>４問目</h2>
+        <h2>おふろに入るときにスマホは</h2>
+        <div class="que-scale">
+          <div class="box">
+            <input type="radio" id="radio7" name="question4" value="yes"/>
+            <label for="radio7">お風呂内に持って入る</label><br>
+            <input type="radio" id="radio8" name="question4" value="no"/>
+            <label for="radio8">持って入らない</label>
+           </div>
+         </div>
+         <br>
+
+         <h2>５問目</h2>
+        <h2>おふろに入るときにスマホは</h2>
+        <div class="que-scale">
+          <div class="box">
+            <input type="radio" id="radio9" name="question5" value="yes"/>
+            <label for="radio9">お風呂内に持って入る</label><br>
+            <input type="radio" id="radio10" name="question5" value="no"/>
+            <label for="radio10">持って入らない</label>
+           </div>
+         </div>
+         <br>
+
+         <h2>６問目</h2>
+        <h2>おふろに入るときにスマホは</h2>
+        <div class="que-scale">
+          <div class="box">
+            <input type="radio" id="radio11" name="question6" value="yes"/>
+            <label for="radio11">お風呂内に持って入る</label><br>
+            <input type="radio" id="radio12" name="question6" value="no"/>
+            <label for="radio12">持って入らない</label>
+           </div>
+         </div>
+         <br>
+
+         <h2>７問目</h2>
+        <h2>おふろに入るときにスマホは</h2>
+        <div class="que-scale">
+          <div class="box">
+            <input type="radio" id="radio13" name="question7" value="yes"/>
+            <label for="radio13">お風呂内に持って入る</label><br>
+            <input type="radio" id="radio14" name="question7" value="no"/>
+            <label for="radio14">持って入らない</label>
+           </div>
+         </div>
+         <br>
+
+         <h2>８問目</h2>
+        <h2>おふろに入るときにスマホは</h2>
+        <div class="que-scale">
+          <div class="box">
+            <input type="radio" id="radio15" name="question8" value="yes"/>
+            <label for="radio15">お風呂内に持って入る</label><br>
+            <input type="radio" id="radio16" name="question8" value="no"/>
+            <label for="radio16">持って入らない</label>
+           </div>
+         </div>
+         <br>
+
+         <h2>９問目</h2>
+        <h2>おふろに入るときにスマホは</h2>
+        <div class="que-scale">
+          <div class="box">
+            <input type="radio" id="radio17" name="question9" value="yes"/>
+            <label for="radio17">お風呂内に持って入る</label><br>
+            <input type="radio" id="radio18" name="question9" value="no"/>
+            <label for="radio18">持って入らない</label>
+           </div>
+         </div>
+         <br>
+
+         <h2>１０問目</h2>
+        <h2>おふろに入るときにスマホは</h2>
+        <div class="que-scale">
+          <div class="box">
+            <input type="radio" id="radio19" name="question10" value="yes"/>
+            <label for="radio19">お風呂内に持って入る</label><br>
+            <input type="radio" id="radio20" name="question10" value="no"/>
+            <label for="radio20">持って入らない</label>
+           </div>
+         </div>
+         <br>
+
+        <ons-button id="push-button">次へ</ons-button>
+      </div>
+    </ons-page>
+  </ons-template>
+
+  <ons-template id="page2.html">
+    <ons-page id="second-page">
+      <ons-toolbar>
+        <div class="left"><ons-back-button>Page 1</ons-back-button></div>
+        <div class="center">A LITTLE</div>
+      </ons-toolbar>
+      <div class="content" style="text-align: center">
+        <h1>結果発表</h1>
+
+        <h2>あなたのスマホ依存度は <span></span>％です！</h2>
+
+
+
+        <ons-button id="push-button">次へ</ons-button>
+        <ons-button id="pop-button">戻る</ons-button>       
+      </div>
+    </ons-page>
+  </ons-template>
+
+  <ons-template id="page3.html">
+    <ons-page id="third-page">
+      <ons-toolbar>
+        <div class="left"><ons-back-button>Page 2</ons-back-button></div>
+        <div class="center">スマホ依存度チェック</div>
+      </ons-toolbar>
+
+      <div class="content" style="text-align: center">
+        <h1>３問目</h1>
+        
+        <ons-button id="push-button">次へ</ons-button>
+        <ons-button id="pop-button">戻る</ons-button>       
+      </div>
+    </ons-page>
+  </ons-template>
+</body>
+</html>

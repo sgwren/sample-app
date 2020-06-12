@@ -80,19 +80,44 @@ if (ons.platform.isIPhoneX()) {
 </head>
 <body>
   <script src="components/main.js"></script>
+
+  <!-- new1page -->
   <ons-navigator id="navigator" page="page1.html"></ons-navigator>
-  
   <ons-template id="page1.html">
     <ons-page id="first-page">
       <ons-toolbar>
         <div class="center">A LITTLE</div>
       </ons-toolbar>
-
       <div class="content" style="text-align: center">
-        <h1>スマホ依存度チェック</h1>
+        <!-- <img src="./gazou/ygback.png"> -->
+        <div class="title">
+          <h1>A LITTLE</h1>
+          <h2>スマホ依存を少しでも解消するアプリ</h2>         
+        </div>
 
-        <h2>１問目</h2>
-        <h2>おふろに入るときにスマホは</h2>
+        <ons-button type="button" value="ボタン" id="push-button"onclick="clickBtn1()" />QUESTION</ons-button>
+
+      </div>
+    </ons-page>
+  </ons-template>
+
+  <!-- new2page -->
+  <ons-template id="page2.html">
+    <ons-page id="second-page">
+      <ons-toolbar>
+        <div class="left"><ons-back-button>Page 1</ons-back-button></div>
+        <div class="center">A LITTLE</div>
+      </ons-toolbar>
+      <div class="content" style="text-align: center">
+        
+        <div class="sa-check">
+          <h1>スマホ依存度チェック</h1>
+        </div>
+
+        <div class="question">
+
+          <h2>１問目</h2>
+          <h2>おふろに入るときにスマホは</h2>
         <div class="que-scale">
           <div class="box">
             <form name="form1" id="f1">
@@ -101,163 +126,239 @@ if (ons.platform.isIPhoneX()) {
               <input type="radio" id="radio2" name="question1" value="no"/>
               <label for="radio2">持って入らない</label>
             </form>
-           </div>
-         </div>
-         <br>
-          
-         <h2>２問目</h2>
-        <h2>電車に乗っていてスマホを忘れたことに気づいたら</h2>
+          </div>
+        </div>
+        <br>
+        
+        <h2>２問目</h2>
+        <h2>読書をする習慣は</h2>
         <div class="que-scale">
           <div class="box">
             <input type="radio" id="radio3" name="question2" value="yes"/>
-            <label for="radio3">取りに帰る</label><br>
+            <label for="radio3">ない（なくなった）</label><br>
             <input type="radio" id="radio4" name="question2" value="no"/>
-            <label for="radio4">そのまま出かける</label>
-           </div>
-         </div>
-         <br>
-
-         <h2>３問目</h2>
-        <h2>目的がなくても、ついスマホを触ってしまう</h2>
+            <label for="radio4">ある</label>
+          </div>
+        </div>
+        <br>
+        
+        <h2>３問目</h2>
+        <h2>運動する習慣は</h2>
         <div class="que-scale">
           <div class="box">
             <input type="radio" id="radio5" name="question3" value="yes"/>
-            <label for="radio5">はい</label><br>
+            <label for="radio5">ない（なくなった）</label><br>
             <input type="radio" id="radio6" name="question3" value="no"/>
-            <label for="radio6">いいえ</label>
-           </div>
-         </div>
-         <br>
-
-         <h2>４問目</h2>
-        <h2>おふろに入るときにスマホは</h2>
+            <label for="radio6">ある</label>
+          </div>
+        </div>
+        <br>
+        
+        <h2>４問目</h2>
+        <h2>目的がなくても、ついスマホを触ってしまう</h2>
         <div class="que-scale">
           <div class="box">
             <input type="radio" id="radio7" name="question4" value="yes"/>
-            <label for="radio7">お風呂内に持って入る</label><br>
+            <label for="radio7">はい</label><br>
             <input type="radio" id="radio8" name="question4" value="no"/>
-            <label for="radio8">持って入らない</label>
-           </div>
-         </div>
-         <br>
-
-         <h2>５問目</h2>
-        <h2>おふろに入るときにスマホは</h2>
+            <label for="radio8">いいえ</label>
+          </div>
+        </div>
+        <br>
+        
+        <h2>５問目</h2>
+        <h2>あなたが起きてまず先にやることは</h2>
         <div class="que-scale">
           <div class="box">
             <input type="radio" id="radio9" name="question5" value="yes"/>
-            <label for="radio9">お風呂内に持って入る</label><br>
+            <label for="radio9">スマホをチェック</label><br>
             <input type="radio" id="radio10" name="question5" value="no"/>
-            <label for="radio10">持って入らない</label>
-           </div>
+            <label for="radio10">朝の準備</label>
+          </div>
          </div>
          <br>
-
+         
          <h2>６問目</h2>
-        <h2>おふろに入るときにスマホは</h2>
-        <div class="que-scale">
-          <div class="box">
-            <input  type="radio" id="radio11" name="question6" value="yes"/>
-            <label for="radio11">お風呂内に持って入る</label><br>
-            <input type="radio" id="radio12" name="question6" value="no"/>
-            <label for="radio12">持って入らない</label>
-           </div>
-         </div>
-         <br>
-
+         <h2>スマホゲームは</h2>
+         <div class="que-scale">
+           <div class="box">
+             <input  type="radio" id="radio11" name="question6" value="yes"/>
+             <label for="radio11">常にしている（気になっている）</label><br>
+             <input type="radio" id="radio12" name="question6" value="no"/>
+             <label for="radio12">しない（たまにする）</label>
+            </div>
+          </div>
+          <br>
+          
          <h2>７問目</h2>
-        <h2>おふろに入るときにスマホは</h2>
-        <div class="que-scale">
-          <div class="box">
-            <input type="radio" id="radio13" name="question7" value="yes"/>
-            <label for="radio13">お風呂内に持って入る</label><br>
-            <input type="radio" id="radio14" name="question7" value="no"/>
-            <label for="radio14">持って入らない</label>
-           </div>
+         <h2>動画配信サイト（YouTube,NETFLIX,Hulu等）を視聴する頻度は</h2>
+         <div class="que-scale">
+           <div class="box">
+             <input type="radio" id="radio13" name="question7" value="yes"/>
+             <label for="radio13">よく視聴する</label><br>
+             <input type="radio" id="radio14" name="question7" value="no"/>
+             <label for="radio14">あまり視聴しない</label>
+            </div>
+          </div>
+          <br>
+          
+          <h2>８問目</h2>
+          <h2>休日の外出は</h2>
+          <div class="que-scale">
+            <div class="box">
+              <input type="radio" id="radio15" name="question8" value="yes"/>
+              <label for="radio15">予定がなければ家にいる</label><br>
+              <input type="radio" id="radio16" name="question8" value="no"/>
+            <label for="radio16">予定がなくても出かける</label>
+          </div>
          </div>
          <br>
-
-         <h2>８問目</h2>
-        <h2>おふろに入るときにスマホは</h2>
-        <div class="que-scale">
-          <div class="box">
-            <input type="radio" id="radio15" name="question8" value="yes"/>
-            <label for="radio15">お風呂内に持って入る</label><br>
-            <input type="radio" id="radio16" name="question8" value="no"/>
-            <label for="radio16">持って入らない</label>
-           </div>
-         </div>
-         <br>
-
+         
          <h2>９問目</h2>
-        <h2>おふろに入るときにスマホは</h2>
-        <div class="que-scale">
-          <div class="box">
-            <input type="radio" id="radio17" name="question9" value="yes"/>
-            <label for="radio17">お風呂内に持って入る</label><br>
-            <input type="radio" id="radio18" name="question9" value="no"/>
-            <label for="radio18">持って入らない</label>
-           </div>
-         </div>
+         <h2>歩行しているときも、スマホを持ち歩きスマホをチェックしている</h2>
+         <div class="que-scale">
+           <div class="box">
+             <input type="radio" id="radio17" name="question9" value="yes"/>
+             <label for="radio17">はい</label><br>
+             <input type="radio" id="radio18" name="question9" value="no"/>
+             <label for="radio18">いいえ</label>
+            </div>
+          </div>
          <br>
-
+         
          <h2>１０問目</h2>
-        <h2>おふろに入るときにスマホは</h2>
+         <h2>就寝前に</h2>
         <div class="que-scale">
           <div class="box">
             <input type="radio" id="radio19" name="question10" value="yes"/>
-            <label for="radio19">お風呂内に持って入る</label><br>
+            <label for="radio19">長時間スマホを操作する</label><br>
             <input type="radio" id="radio20" name="question10" value="no"/>
-            <label for="radio20">持って入らない</label>
-           </div>
-         </div>
-         <br>
-
+            <label for="radio20">用事が済んだら操作しない</label>
+          </div>
+        </div>
+      </div>
+        <br>
+        
         <!-- <ons-button id="push-button">次へ</ons-button> -->
 
         <ons-button type="button" value="ボタン" id="push-button"onclick="clickBtn1()"/>次へ</ons-button>
+        <ons-button id="pop-button">戻る</ons-button>
 
       </div>
     </ons-page>
   </ons-template>
 
-  <ons-template id="page2.html">
-    <ons-page id="second-page">
-      <ons-toolbar>
-        <div class="left"><ons-back-button>Page 1</ons-back-button></div>
-        <div class="center">A LITTLE</div>
-      </ons-toolbar>
-      <div class="content" style="text-align: center">
-        <h1>結果発表</h1>
-
-        <p>あなたのスマホ依存度は <span id="span1"></span>％です！</p>
-
-        <p>あなたのスマホ依存度は <span id="span2"></span>％です！</p>
-
-        <!-- <h2>あなたのスマホ依存度は <span id="getid"></span>％です！</h2> -->
-
-
-
-        <ons-button id="push-button">次へ</ons-button>
-        <ons-button id="pop-button">戻る</ons-button>       
-      </div>
-    </ons-page>
-  </ons-template>
-
+  <!-- new3page -->
   <ons-template id="page3.html">
     <ons-page id="third-page">
       <ons-toolbar>
         <div class="left"><ons-back-button>Page 2</ons-back-button></div>
-        <div class="center">スマホ依存度チェック</div>
-      </ons-toolbar>
 
+        <div class="center">A LITTLE</div>
+      </ons-toolbar>
       <div class="content" style="text-align: center">
-        <h1>３問目</h1>
-        
+        <h2>結果発表</h2>
+
+        <h1 class="izonndo">あなたのスマホ依存度は <span id="span2" style="color: #ff0000;"></span>％です！</h1>
+
+        <div class="messeage">
+          <div class="container">
+            <h3>依存度は<span id="span3"></span>です。</h3>
+            <p>あなたは<span id="span4"></span></p>
+          </div>
+          
+          <!-- <img id="image_place" src="./gazou/run_and_dog.jpg"/> -->
+          
+          <div class="hb-img">
+
+            <div class="hb-bath"><span id="span5-0"></span>
+              <div class="hb" id="r1hb">
+
+                <div class="r1hb-1">
+                  <span id="span5"></span>
+                  <div class="hb-text" id="span55-0"></div>
+                </div>
+
+                <div class="r1hb-2">
+                  <span id="span5-1"></span>
+                  <div class="hb-text" id="span55-1"></div>
+                </div>
+                
+                <div class="r1hb-3">
+                  <span id="span5-2"></span>
+                  <div class="hb-text" id="span55-2"></div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="hb-book"><span id="span6-0"></span>
+              <div class="hb" id="r2hb">
+
+                <div class="r2hb-1">
+                  <span id="span6"></span>
+                  <div class="hb-text" id="span66-0"></div>
+                </div>
+
+                <div class="r1hb-2">
+                  <span id="span6-1"></span>
+                  <div class="hb-text" id="span66-1"></div>
+                </div>
+                
+                <div class="r1hb-3">
+                  <span id="span6-2"></span>
+                  <div class="hb-text" id="span66-2"></div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="hb-book"><span id="span6-0"></span>
+              <div class="r2hb">
+                <div class="r2hb-1">
+                  <p><span id="span6"></span></p>
+                  <p class="hb-text" ><span id="span66"></span></p>
+                </div>
+                <div class="r1hb-2">
+                  <p><span id="span6-1"></span></p>
+                  <p class="hb-text" ><span id="span66-1"></span></p>
+                </div>
+                <div class="r1hb-3">
+                  <p><span id="span6-2"></span></p>
+                  <p class="hb-text" ><span id="span66-2"></span></p>
+                </div>
+              </div>
+            </div>
+
+
+            <p><span id="span7"></span></p>
+            <p><span id="span8"></span></p>
+            <p><span id="span9"></span></p>
+            <p><span id="span10"></span></p>
+            <p><span id="span11"></span></p>
+            <p><span id="span12"></span></p>
+            <p><span id="span13"></span></p>
+            <p><span id="span14"></span></p>
+            <!-- <p>あなたは<span id="span5">span5</span></p>
+            <p>あなたは<span id="span5">span5</span></p> -->
+          </div>
+
+
+
+          <!-- <p>
+            おすすめの趣味は、
+          </p> -->
+
+        </div>
+
+
+
         <ons-button id="push-button">次へ</ons-button>
         <ons-button id="pop-button">戻る</ons-button>       
       </div>
     </ons-page>
   </ons-template>
+
+
 </body>
 </html>

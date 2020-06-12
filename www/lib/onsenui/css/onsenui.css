@@ -62,11 +62,11 @@ ons-toolbar:not([inline]) {
 ons-bottom-toolbar {
   bottom: 0;
 }
-
+/* !important外した */
 .page, .page__content,
 .page--material, .page--material__content {
-  background-color: transparent !important;
-  background: transparent !important;
+  background-color: transparent ;
+  background: transparent ;
 }
 
 .page__content {

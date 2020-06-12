@@ -1,14 +1,22 @@
 
-#push-button {
+#push-button, #push2-button {
   display: inline-block;
   padding: 0.5em 1em;
   text-decoration: none;
-  background: #668ad8;/*ボタン色*/
+  background-color: #008000;/*ボタン色*/
   color: #FFF;
   border-bottom: solid 4px #627295;
   border-radius: 3px;
 }
-#push-button:active {
+
+/* #push-button, #push2-button:hover { */
+	/* 背景色を明るい青色に指定 */
+	/* background-color: #24d; */
+	/* 文字色を白色に指定 */
+	/* color: #fff;
+} */
+
+#push-button, #push2-button:active {
   /*ボタンを押したとき*/
   -webkit-transform: translateY(4px);
   transform: translateY(4px);/*下に動く*/
@@ -28,8 +36,49 @@
   /*ボタンを押したとき*/
   -webkit-transform: translateY(4px);
   transform: translateY(4px);/*下に動く*/
-  border-bottom: none;/*線を消す*/
+	border-bottom: none;/*線を消す*/
 }
+
+/* new1page */
+
+.content {
+	background-color: #3CB371;
+	/* background-image: url("../gazou/gcont.png"); */
+	/* background-color:rgba(255, 255, 255, 0.459); */
+	/* background-blend-mode:lighten; */
+	/* background-color: #00cc33; */
+}
+
+/* title */
+.title h1{
+	margin:70px 0 auto;
+	color:#ffffff;
+	font-weight: bold;
+	font-style: 'arial black';
+	font-size: 100px;
+}
+
+.title h2 {
+	margin:10px 0 auto;
+	color: #ffffff;
+	font-weight: bold;
+	font-style: 'arial black';
+	font-size: 30px;
+}
+
+/* new2page */
+.sa-check h1{
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 30px;
+}
+
+.question h2 {
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 20px;
+}
+
 
 /*問題*/
 .que-scale {
@@ -48,6 +97,7 @@
 	border: 1px solid white;
 	border-radius: 3px;
 	background: #ffffff;
+	opacity: 0.7;
 }
 .que-scale input[type=radio] {
 	display: none;
@@ -56,13 +106,13 @@
 .que-scale label:hover,
 .que-scale label:active,
 .que-scale input:checked + label {
-	color: #da3c41;
+	color: #009900;
 }
 .que-scale label:focus:before,
 .que-scale label:hover:before,
 .que-scale label:active:before,
 .que-scale input:checked + label:before {
-	border-color: #da3c41;
+	border-color: #009900;
 	background: #ffffff;
 }
 .que-scale label {
@@ -91,7 +141,124 @@
 	border-radius: 50%;
 }
 .que-scale input:checked + label:before {
+	border-color: #009900;
+	background: #009900;
+}
+
+
+/* page3 */
+
+.izonndo {
+  padding: 0.5em;/*文字周りの余白*/
+  color: #010101;/*文字色*/
+  background: #eaf3ff;/*背景色*/
+  border-bottom: solid 3px#ff0000;/*下線*/
+}
+
+
+
+/*質問*/
+.hb-scale {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+.hb-scale:before,
+.hb-scale:after {
+	-webkit-box-sizing: inherit;
+	        box-sizing: inherit;
+}
+.hb-scale .hb-box {
+	width: 90%;
+	margin: 2em auto;
+	text-align: left;
+	border: 1px solid white;
+	border-radius: 3px;
+	background: #ffffff;
+}
+.hb-scale input[type=checkbox] {
+	display: none;
+}
+.hb-scale label:focus,
+.hb-scale label:hover,
+.hb-scale label:active,
+.hb-scale input:checked + label {
+	color: #da3c41;
+}
+.hb-scale label:focus:before,
+.hb-scale label:hover:before,
+.hb-scale label:active:before,
+.hb-scale input:checked + label:before {
+	border-color: #da3c41;
+	background: #ffffff;
+}
+.hb-scale label {
+	font-size: 1em;
+	font-weight: bold;
+	line-height: 1;
+	position: relative;
+	display: block;
+	overflow: hidden;
+	padding: 1em 1em 1em 3em;
+	cursor: pointer;
+	-webkit-transition: all 0.15s ease;
+	        transition: all 0.15s ease;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	background: #ffffff;
+}
+.hb-scale label:before {
+	position: absolute;
+	top: 1em;
+	left: 1em;
+	width: 10px;
+	height: 10px;
+	content: '';
+	border: 0.2em solid #cccccc;
+	border-radius: 50%;
+}
+.hb-scale input:checked + label:before {
 	border-color: #da3c41;
 	background: #da3c41;
 }
+
+/* .hb-img {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;  */
+	/* 子要素をflexboxにより中央に配置する */
+/* } */
+
+
+
+/* .hb-bath ,.hb-book */
+/* #span5-0, #span6-0
+{
+	color: #ffffff;
+	background-color: chartreuse;
+	border: 1px solid black; */
+  /* 飾り */
+  /* margin: 0; */
+  /* widthの計算簡単にするため（marginも使うための拡張は後で） */
+/* } */
+
+#r1hb, #r2hb
+/* .hb  */
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	/* 子要素をflexboxにより中央に配置する */
+	/* width: 33.3%; */
+  /* 100%を1行当たりのカラム数（今回は3）で割った数値 */
+ } 
+
+/* #span55-0, #span55-1, #span55-2,#span66-0, #span66-1, #span66-2 */
+/* .hb-text */
+/* {
+	color: #ffffff;
+	padding: 10px;
+	margin-bottom: 0px;
+	border: 1px solid #333333;
+	width:300px;
+} */
 
