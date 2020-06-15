@@ -1,13 +1,16 @@
 <!DOCTYPE HTML>
 <html>
+
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
-  <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
   <script src="components/loader.js"></script>
-  
+
   <script src="lib/onsenui/js/onsenui.min.js"></script>
-  
+
   <link rel="stylesheet" href="components/loader.css">
   <link rel="stylesheet" href="lib/onsenui/css/onsenui.css">
   <link rel="stylesheet" href="lib/onsenui/css/onsen-css-components.css">
@@ -17,7 +20,7 @@
     // Page init event
     // document.addEventListener('init', function(event) {
     //   var page = event.target;
-      
+
     //   if (page.matches('#first-page')) {
     //     page.querySelector('#push-button').onclick = function() {
     //       document.querySelector('#navigator').pushPage('page2.html');
@@ -28,7 +31,7 @@
     //         document.querySelector('#navigator').popPage();
     //       };
     //     }
-        
+
     //     if (page.matches('#second-page')) {
     //     page.querySelector('#push-button').onclick = function() {
     //       document.querySelector('#navigator').pushPage('page3.html');
@@ -40,44 +43,13 @@
     //     };
     //   }
     // });
-    
- 
-
-
-
-if (ons.platform.isIPhoneX()) {
-  document.documentElement.setAttribute('onsflag-iphonex-portrait', '');
-  document.documentElement.setAttribute('onsflag-iphonex-landscape', '');
-}
-
-
-// console.log (q1);
-        // let selectedQuestion;
-        // let i = qYes.checked();
-
-        // let izonndo = 0;
-        // for(let i=0;i<qYes.length;i++){
-          //   if(qYes[i]==="yes"){
-            //     izonndo+=10;
-        //   }
-        // }
-        
-        // for(i=0; ; i ++);
-        
-        // if(qYes.checked() == 10) {
-          //   selectedQuestion = 100;
-          //  }else if(qYes.checked() >= 8){
-            //    selectedQuestion = 90;
-            //  }else if(qYes.checked() >= 5){
-              //    selectedQuestion = 70;
-              //  }else if(qYes.checked() >= 3){
-                //    selectedQuestion = 50;
-                //  }else if(qYes.checked() >= 0){
-                  //    selectedQuestion = 0;
-                  //  }
-                  // });
-                  </script>
+    if (ons.platform.isIPhoneX()) {
+      document.documentElement.setAttribute('onsflag-iphonex-portrait', '');
+      document.documentElement.setAttribute('onsflag-iphonex-landscape', '');
+    }
+  </script>
 </head>
+
 <body>
   <script src="components/main.js"></script>
 
@@ -89,13 +61,12 @@ if (ons.platform.isIPhoneX()) {
         <div class="center">A LITTLE</div>
       </ons-toolbar>
       <div class="content" style="text-align: center">
-        <!-- <img src="./gazou/ygback.png"> -->
         <div class="title">
-          <h1>A LITTLE</h1>
-          <h2>スマホ依存を少しでも解消するアプリ</h2>         
+          <div class="maintitle">A LITTLE</div>
+          <div class="subtitle">スマホ依存を少しでも解消するアプリ</div>
         </div>
 
-        <ons-button type="button" value="ボタン" id="push-button"onclick="clickBtn1()" />QUESTION</ons-button>
+        <ons-button type="button" value="ボタン" id="push-button" onclick="clickBtn1()" />QUESTION</ons-button>
 
       </div>
     </ons-page>
@@ -105,11 +76,13 @@ if (ons.platform.isIPhoneX()) {
   <ons-template id="page2.html">
     <ons-page id="second-page">
       <ons-toolbar>
-        <div class="left"><ons-back-button>Page 1</ons-back-button></div>
+        <div class="left">
+          <ons-back-button>Page 1</ons-back-button>
+        </div>
         <div class="center">A LITTLE</div>
       </ons-toolbar>
       <div class="content" style="text-align: center">
-        
+
         <div class="sa-check">
           <h1>スマホ依存度チェック</h1>
         </div>
@@ -118,130 +91,130 @@ if (ons.platform.isIPhoneX()) {
 
           <h2>１問目</h2>
           <h2>おふろに入るときにスマホは</h2>
-        <div class="que-scale">
-          <div class="box">
-            <form name="form1" id="f1">
-              <input type="radio" id="radio1" name="question1" value="yes"/>
-              <label for="radio1">お風呂内に持って入る</label><br>
-              <input type="radio" id="radio2" name="question1" value="no"/>
-              <label for="radio2">持って入らない</label>
-            </form>
-          </div>
-        </div>
-        <br>
-        
-        <h2>２問目</h2>
-        <h2>読書をする習慣は</h2>
-        <div class="que-scale">
-          <div class="box">
-            <input type="radio" id="radio3" name="question2" value="yes"/>
-            <label for="radio3">ない（なくなった）</label><br>
-            <input type="radio" id="radio4" name="question2" value="no"/>
-            <label for="radio4">ある</label>
-          </div>
-        </div>
-        <br>
-        
-        <h2>３問目</h2>
-        <h2>運動する習慣は</h2>
-        <div class="que-scale">
-          <div class="box">
-            <input type="radio" id="radio5" name="question3" value="yes"/>
-            <label for="radio5">ない（なくなった）</label><br>
-            <input type="radio" id="radio6" name="question3" value="no"/>
-            <label for="radio6">ある</label>
-          </div>
-        </div>
-        <br>
-        
-        <h2>４問目</h2>
-        <h2>目的がなくても、ついスマホを触ってしまう</h2>
-        <div class="que-scale">
-          <div class="box">
-            <input type="radio" id="radio7" name="question4" value="yes"/>
-            <label for="radio7">はい</label><br>
-            <input type="radio" id="radio8" name="question4" value="no"/>
-            <label for="radio8">いいえ</label>
-          </div>
-        </div>
-        <br>
-        
-        <h2>５問目</h2>
-        <h2>あなたが起きてまず先にやることは</h2>
-        <div class="que-scale">
-          <div class="box">
-            <input type="radio" id="radio9" name="question5" value="yes"/>
-            <label for="radio9">スマホをチェック</label><br>
-            <input type="radio" id="radio10" name="question5" value="no"/>
-            <label for="radio10">朝の準備</label>
-          </div>
-         </div>
-         <br>
-         
-         <h2>６問目</h2>
-         <h2>スマホゲームは</h2>
-         <div class="que-scale">
-           <div class="box">
-             <input  type="radio" id="radio11" name="question6" value="yes"/>
-             <label for="radio11">常にしている（気になっている）</label><br>
-             <input type="radio" id="radio12" name="question6" value="no"/>
-             <label for="radio12">しない（たまにする）</label>
+          <div class="que-scale">
+            <div class="box">
+              <form name="form1" id="f1">
+                <input type="radio" id="radio1" name="question1" value="yes" />
+                <label for="radio1">お風呂内に持って入る</label><br>
+                <input type="radio" id="radio2" name="question1" value="no" />
+                <label for="radio2">持って入らない</label>
+              </form>
             </div>
           </div>
           <br>
-          
-         <h2>７問目</h2>
-         <h2>動画配信サイト（YouTube,NETFLIX,Hulu等）を視聴する頻度は</h2>
-         <div class="que-scale">
-           <div class="box">
-             <input type="radio" id="radio13" name="question7" value="yes"/>
-             <label for="radio13">よく視聴する</label><br>
-             <input type="radio" id="radio14" name="question7" value="no"/>
-             <label for="radio14">あまり視聴しない</label>
+
+          <h2>２問目</h2>
+          <h2>読書をする習慣は</h2>
+          <div class="que-scale">
+            <div class="box">
+              <input type="radio" id="radio3" name="question2" value="yes" />
+              <label for="radio3">ない（なくなった）</label><br>
+              <input type="radio" id="radio4" name="question2" value="no" />
+              <label for="radio4">ある</label>
             </div>
           </div>
           <br>
-          
+
+          <h2>３問目</h2>
+          <h2>運動する習慣は</h2>
+          <div class="que-scale">
+            <div class="box">
+              <input type="radio" id="radio5" name="question3" value="yes" />
+              <label for="radio5">ない（なくなった）</label><br>
+              <input type="radio" id="radio6" name="question3" value="no" />
+              <label for="radio6">ある</label>
+            </div>
+          </div>
+          <br>
+
+          <h2>４問目</h2>
+          <h2>目的がなくても、ついスマホを触ってしまう</h2>
+          <div class="que-scale">
+            <div class="box">
+              <input type="radio" id="radio7" name="question4" value="yes" />
+              <label for="radio7">はい</label><br>
+              <input type="radio" id="radio8" name="question4" value="no" />
+              <label for="radio8">いいえ</label>
+            </div>
+          </div>
+          <br>
+
+          <h2>５問目</h2>
+          <h2>あなたが起きてまず先にやることは</h2>
+          <div class="que-scale">
+            <div class="box">
+              <input type="radio" id="radio9" name="question5" value="yes" />
+              <label for="radio9">スマホをチェック</label><br>
+              <input type="radio" id="radio10" name="question5" value="no" />
+              <label for="radio10">朝の準備</label>
+            </div>
+          </div>
+          <br>
+
+          <h2>６問目</h2>
+          <h2>スマホゲームは</h2>
+          <div class="que-scale">
+            <div class="box">
+              <input type="radio" id="radio11" name="question6" value="yes" />
+              <label for="radio11">常にしている（気になっている）</label><br>
+              <input type="radio" id="radio12" name="question6" value="no" />
+              <label for="radio12">しない（たまにする）</label>
+            </div>
+          </div>
+          <br>
+
+          <h2>７問目</h2>
+          <h2>動画配信サイト（YouTube,NETFLIX,Hulu等）を視聴する頻度は</h2>
+          <div class="que-scale">
+            <div class="box">
+              <input type="radio" id="radio13" name="question7" value="yes" />
+              <label for="radio13">よく視聴する</label><br>
+              <input type="radio" id="radio14" name="question7" value="no" />
+              <label for="radio14">あまり視聴しない</label>
+            </div>
+          </div>
+          <br>
+
           <h2>８問目</h2>
           <h2>休日の外出は</h2>
           <div class="que-scale">
             <div class="box">
-              <input type="radio" id="radio15" name="question8" value="yes"/>
+              <input type="radio" id="radio15" name="question8" value="yes" />
               <label for="radio15">予定がなければ家にいる</label><br>
-              <input type="radio" id="radio16" name="question8" value="no"/>
-            <label for="radio16">予定がなくても出かける</label>
-          </div>
-         </div>
-         <br>
-         
-         <h2>９問目</h2>
-         <h2>歩行しているときも、スマホを持ち歩きスマホをチェックしている</h2>
-         <div class="que-scale">
-           <div class="box">
-             <input type="radio" id="radio17" name="question9" value="yes"/>
-             <label for="radio17">はい</label><br>
-             <input type="radio" id="radio18" name="question9" value="no"/>
-             <label for="radio18">いいえ</label>
+              <input type="radio" id="radio16" name="question8" value="no" />
+              <label for="radio16">予定がなくても出かける</label>
             </div>
           </div>
-         <br>
-         
-         <h2>１０問目</h2>
-         <h2>就寝前に</h2>
-        <div class="que-scale">
-          <div class="box">
-            <input type="radio" id="radio19" name="question10" value="yes"/>
-            <label for="radio19">長時間スマホを操作する</label><br>
-            <input type="radio" id="radio20" name="question10" value="no"/>
-            <label for="radio20">用事が済んだら操作しない</label>
+          <br>
+
+          <h2>９問目</h2>
+          <h2>歩行しているときも、スマホを持ち歩きスマホをチェックしている</h2>
+          <div class="que-scale">
+            <div class="box">
+              <input type="radio" id="radio17" name="question9" value="yes" />
+              <label for="radio17">はい</label><br>
+              <input type="radio" id="radio18" name="question9" value="no" />
+              <label for="radio18">いいえ</label>
+            </div>
+          </div>
+          <br>
+
+          <h2>１０問目</h2>
+          <h2>就寝前に</h2>
+          <div class="que-scale">
+            <div class="box">
+              <input type="radio" id="radio19" name="question10" value="yes" />
+              <label for="radio19">長時間スマホを操作する</label><br>
+              <input type="radio" id="radio20" name="question10" value="no" />
+              <label for="radio20">用事が済んだら操作しない</label>
+            </div>
           </div>
         </div>
-      </div>
         <br>
-        
+
         <!-- <ons-button id="push-button">次へ</ons-button> -->
 
-        <ons-button type="button" value="ボタン" id="push-button"onclick="clickBtn1()"/>次へ</ons-button>
+        <ons-button type="button" value="ボタン" id="push-button" onclick="clickBtn1()" />次へ</ons-button>
         <ons-button id="pop-button">戻る</ons-button>
 
       </div>
@@ -252,34 +225,41 @@ if (ons.platform.isIPhoneX()) {
   <ons-template id="page3.html">
     <ons-page id="third-page">
       <ons-toolbar>
-        <div class="left"><ons-back-button>Page 2</ons-back-button></div>
+        <div class="left">
+          <ons-back-button>Page 2</ons-back-button>
+        </div>
 
         <div class="center">A LITTLE</div>
       </ons-toolbar>
       <div class="content" style="text-align: center">
-        <h2>結果発表</h2>
+        <div class="result">結果発表</div>
 
-        <h1 class="izonndo">あなたのスマホ依存度は <span id="span2" style="color: #ff0000;"></span>％です！</h1>
+        <div class="izonndo">あなたのスマホ依存度は <span id="span2" style="color: #ff0000; font-size : 70px"></span>％です！</div>
 
         <div class="messeage">
           <div class="container">
-            <h3>依存度は<span id="span3"></span>です。</h3>
-            <p>あなたは<span id="span4"></span></p>
-          </div>
-          
-          <!-- <img id="image_place" src="./gazou/run_and_dog.jpg"/> -->
-          
-          <div class="hb-img">
+            <div class="izonndo-text">依存度は<span id="span3" style="color: #ff0000; font-size : 30px"></span>です。</h3>
+              <div class="izonndo-se"><span id="span4"></span></div>
+            </div>
 
-            <div class="hb-bath"><span id="span5-0"></span>
-              <div class="hb" id="r1hb">
+            <!-- <img id="image_place" src="./gazou/run_and_dog.jpg"/> -->
 
-                <div class="r1hb-1">
-                  <span id="span5"></span>
-                  <div class="hb-text" id="span55-0"></div>
+            <div class="hb-img">
+
+              <!-- 1 -->
+              <div class="hb-bath">
+                <div class="hb-subt">
+                  <span id="span5-0"></span>
                 </div>
+                <div class="hb" id="r1hb">
 
-                <div class="r1hb-2">
+                  <div class="r1hb-1">
+                    <span id="span5"></span>
+                    <div class="hb-text" id="span55-0"></div>
+                    <div class="hb-url" id="u1-1"></div>
+                  </div>
+
+                  <!-- <div class="r1hb-2">
                   <span id="span5-1"></span>
                   <div class="hb-text" id="span55-1"></div>
                 </div>
@@ -287,78 +267,238 @@ if (ons.platform.isIPhoneX()) {
                 <div class="r1hb-3">
                   <span id="span5-2"></span>
                   <div class="hb-text" id="span55-2"></div>
-                </div>
+                </div> -->
 
+                </div>
               </div>
-            </div>
 
-            <div class="hb-book"><span id="span6-0"></span>
-              <div class="hb" id="r2hb">
-
-                <div class="r2hb-1">
-                  <span id="span6"></span>
-                  <div class="hb-text" id="span66-0"></div>
+              <!-- 2 -->
+              <div class="hb-book">
+                <div class="hb-subt">
+                  <span id="span6-0"></span>
                 </div>
+                <div class="hb" id="r2hb">
 
-                <div class="r1hb-2">
+                  <div class="r2hb-1">
+                    <span id="span6"></span>
+                    <div class="hb-text" id="span66-0"></div>
+                  </div>
+
+                  <!-- <div class="r2hb-2">
                   <span id="span6-1"></span>
                   <div class="hb-text" id="span66-1"></div>
                 </div>
                 
-                <div class="r1hb-3">
+                <div class="r2hb-3">
                   <span id="span6-2"></span>
                   <div class="hb-text" id="span66-2"></div>
-                </div>
+                </div> -->
 
+                </div>
               </div>
-            </div>
 
-            <div class="hb-book"><span id="span6-0"></span>
-              <div class="r2hb">
-                <div class="r2hb-1">
-                  <p><span id="span6"></span></p>
-                  <p class="hb-text" ><span id="span66"></span></p>
+              <!-- 3 -->
+              <div class="hb-exercise">
+                <div class="hb-subt">
+                  <span id="span7-0"></span>
                 </div>
-                <div class="r1hb-2">
-                  <p><span id="span6-1"></span></p>
-                  <p class="hb-text" ><span id="span66-1"></span></p>
+                <div class="hb" id="r3hb">
+
+                  <div class="r3hb-1">
+                    <span id="span7"></span>
+                    <div class="hb-text" id="span77-0"></div>
+                  </div>
+
+                  <!-- <div class="r3hb-2">
+                  <span id="span7-1"></span>
+                  <div class="hb-text" id="span77-1"></div>
                 </div>
+                
+                <div class="r3hb-3">
+                  <span id="span7-2"></span>
+                  <div class="hb-text" id="span77-2"></div>
+                </div> -->
+
+                </div>
+              </div>
+
+              <!-- 4 -->
+              <div class="hb-touch">
+                <div class="hb-subt">
+                  <span id="span8-0"></span>
+                </div>
+                <div class="hb" id="r4hb">
+
+                  <div class="r4hb-1">
+                    <span id="span8"></span>
+                    <div class="hb-text" id="span88-0"></div>
+                  </div>
+
+                  <!-- <div class="r4hb-2">
+                  <span id="span8-1"></span>
+                  <div class="hb-text" id="span88-1"></div>
+                </div>
+                
                 <div class="r1hb-3">
-                  <p><span id="span6-2"></span></p>
-                  <p class="hb-text" ><span id="span66-2"></span></p>
+                  <span id="span8-2"></span>
+                  <div class="hb-text" id="span88-2"></div>
+                </div> -->
+
                 </div>
               </div>
+
+              <!-- 5 -->
+              <div class="hb-mg">
+                <div class="hb-subt">
+                  <span id="span9-0"></span>
+                </div>
+                <div class="hb" id="r5hb">
+
+                  <div class="r5hb-1">
+                    <span id="span9"></span>
+                    <div class="hb-text" id="span99-0"></div>
+                  </div>
+
+                  <!-- <div class="r5hb-2">
+                  <span id="span9-1"></span>
+                  <div class="hb-text" id="span99-1"></div>
+                </div>
+                
+                <div class="r5hb-3">
+                  <span id="span9-2"></span>
+                  <div class="hb-text" id="span99-2"></div>
+                </div> -->
+
+                </div>
+              </div>
+
+              <!-- 6 -->
+              <div class="hb-game">
+                <div class="hb-subt"><span id="span10-0"></span></div>
+                <div class="hb" id="r6hb">
+
+                  <div class="r6hb-1">
+                    <span id="span10"></span>
+                    <div class="hb-text" id="span1010-0"></div>
+                  </div>
+
+                  <!-- <div class="r6hb-2">
+                  <span id="span10-1"></span>
+                  <div class="hb-text" id="span1010-1"></div>
+                </div>
+                
+                <div class="r6hb-3">
+                  <span id="span10-2"></span>
+                  <div class="hb-text" id="span1010-2"></div>
+                </div> -->
+
+                </div>
+              </div>
+
+              <!-- 7 -->
+              <div class="hb-movie">
+                <div class="hb-subt"><span id="span11-0"></span></div>
+                <div class="hb" id="r11hb">
+
+                  <div class="r11hb-1">
+                    <span id="span11"></span>
+                    <div class="hb-text" id="span1111-0"></div>
+                  </div>
+
+                  <!-- <div class="r11hb-2">
+                  <span id="span11-1"></span>
+                  <div class="hb-text" id="span1111-1"></div>
+                </div>
+                
+                <div class="r11hb-3">
+                  <span id="span11-2"></span>
+                  <div class="hb-text" id="span1111-2"></div>
+                </div> -->
+
+                </div>
+              </div>
+
+              <!-- 8 -->
+              <div class="hb-day">
+                <div class="hb-subt"><span id="span12-0"></span></div>
+                <div class="hb" id="r12hb">
+
+                  <div class="r12hb-1">
+                    <span id="span12"></span>
+                    <div class="hb-text" id="span1212-0"></div>
+                  </div>
+
+                  <!-- <div class="r12hb-2">
+                  <span id="span12-1"></span>
+                  <div class="hb-text" id="span1212-1"></div>
+                </div>
+                
+                <div class="r12hb-3">
+                  <span id="span12-2"></span>
+                  <div class="hb-text" id="span1212-2"></div>
+                </div> -->
+
+                </div>
+              </div>
+
+              <!-- 9 -->
+              <div class="hb-walk">
+                <div class="hb-subt"><span id="span13-0"></span></div>
+                <div class="hb" id="r13hb">
+
+                  <div class="r13hb-1">
+                    <span id="span13"></span>
+                    <div class="hb-text" id="span1313-0"></div>
+                  </div>
+
+                  <!-- <div class="r13hb-2">
+                  <span id="span13-1"></span>
+                  <div class="hb-text" id="span1313-1"></div>
+                </div>
+                
+                <div class="r13hb-3">
+                  <span id="span13-2"></span>
+                  <div class="hb-text" id="span1313-2"></div>
+                </div> -->
+
+                </div>
+              </div>
+
+              <!-- 10 -->
+              <div class="hb-sleep">
+                <div class="hb-subt"><span id="span14-0"></span></div>
+                <div class="hb" id="r2hb">
+
+                  <div class="r14hb-1">
+                    <span id="span14"></span>
+                    <div class="hb-text" id="span1414-0"></div>
+                  </div>
+
+                  <!-- <div class="r14hb-2">
+                  <span id="span14-1"></span>
+                  <div class="hb-text" id="span1414-1"></div>
+                </div>
+                
+                <div class="r14hb-3">
+                  <span id="span14-2"></span>
+                  <div class="hb-text" id="span1414-2"></div>
+                </div> -->
+
+                </div>
+              </div>
+
             </div>
 
-
-            <p><span id="span7"></span></p>
-            <p><span id="span8"></span></p>
-            <p><span id="span9"></span></p>
-            <p><span id="span10"></span></p>
-            <p><span id="span11"></span></p>
-            <p><span id="span12"></span></p>
-            <p><span id="span13"></span></p>
-            <p><span id="span14"></span></p>
-            <!-- <p>あなたは<span id="span5">span5</span></p>
-            <p>あなたは<span id="span5">span5</span></p> -->
           </div>
 
 
 
-          <!-- <p>
-            おすすめの趣味は、
-          </p> -->
-
+          <!-- <ons-button id="push-button">次へ</ons-button> -->
+          <ons-button id="pop-button">homeへ</ons-button>
         </div>
-
-
-
-        <ons-button id="push-button">次へ</ons-button>
-        <ons-button id="pop-button">戻る</ons-button>       
-      </div>
     </ons-page>
   </ons-template>
 
-
 </body>
+
 </html>
