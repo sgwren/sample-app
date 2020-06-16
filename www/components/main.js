@@ -3,19 +3,19 @@ document.addEventListener('init', function (event) {
   var page = event.target;
   // window.onButtonClick = function onButtonClick() {
 
-// 1-1
+  // 1-1
   if (page.matches('#first-page')) {
     page.querySelector('#push-button').onclick = function () {
       document.querySelector('#navigator').pushPage('page2.html');
     };
-  } 
-  
-  // 1-2
+  }
   if (page.matches('#first-page')) {
     page.querySelector('#push2-button').onclick = function () {
       document.querySelector('#navigator').pushPage('page2-2.html');
     };
   }
+
+  // 1-2
   if (page.matches('#second-page')) {
     page.querySelector('#pop-button').onclick = function () {
       document.querySelector('#navigator').popPage();
@@ -501,7 +501,15 @@ document.addEventListener('init', function (event) {
   // }
 
   if (page.matches('#second-2-page')) {
-    page.querySelector('#push-button').onclick = function () {
+
+    window.onclick = function func1() {
+      var input_register = document.getElementById("input_register").value;
+      // input_register = "入力された内容は「" + input_register + "」です。";
+      // document.getElementById("output_register").innerHTML = input_register;
+      console.log(input_register);
+    }
+
+    page.querySelector('#push2-button').onclick = function () {
       document.querySelector('#navigator').pushPage('page2-3.html');
     };
   }
@@ -510,7 +518,35 @@ document.addEventListener('init', function (event) {
       document.querySelector('#navigator').resetToPage('page1.html');
     };
   }
-// }
+
+  if (page.matches('#third-2-page')) {
+
+    // window.onclick = function func1() {
+    // if (func1().onclick) {
+    // input_register = "入力された内容は「" + input_register + "」です。";
+    // var input_register = document.getElementById("input_register").value;
+    document.getElementById("output_register").innerHTML = input_register;
+    // document.getElementById("input_register").innerHTML = input_register;
+    // console.log(input_register);
+    console.log(output_register);
+    // }
+    // }
+
+
+
+
+    //   page.querySelector('#push2-button').onclick = function () {
+    //     document.querySelector('#navigator').pushPage('page3-3.html');
+    //   };
+  }
+  // else if (page.matches('#fourth-2-page')) {
+  //   page.querySelector('#pop-button').onclick = function () {
+  //     document.querySelector('#navigator').resetToPage('page1.html');
+  //   };
+  // }
+
+
+  // }
 });
 
 

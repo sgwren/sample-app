@@ -9,17 +9,6 @@
 	border-radius: 3px;
 }
 
-/* #push-button, #push2-button:hover { */
-
-/* 背景色を明るい青色に指定 */
-
-/* background-color: #24d; */
-
-/* 文字色を白色に指定 */
-
-/* color: #fff;
-} */
-
 #push-button:active {
 	/*ボタンを押したとき*/
 	-webkit-transform: translateY(4px);
