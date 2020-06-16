@@ -20,7 +20,7 @@
 /* color: #fff;
 } */
 
-#push-button, #push2-button:active {
+#push-button:active {
 	/*ボタンを押したとき*/
 	-webkit-transform: translateY(4px);
 	transform: translateY(4px);
@@ -53,13 +53,11 @@
 
 .content {
 	background-color: #3CB371;
-	/* background-image: url("../gazou/gcont.png"); */
-	/* background-color:rgba(255, 255, 255, 0.459); */
-	/* background-blend-mode:lighten; */
-	/* background-color: #00cc33; */
 }
 
 /* title */
+
+.title {}
 
 .maintitle {
 	margin: 70px 0 auto;
@@ -67,6 +65,15 @@
 	font-weight: bold;
 	font-style: 'arial black';
 	font-size: 100px;
+	/* position: absolute;          位置指定 */
+	/* padding: 20px;               余白指定 */
+	/* top:  0;                     位置指定 */
+	/* bottom:  0;                  位置指定 */
+	/* left:  0;                    位置指定 */
+	/* right:  0;                   位置指定 */
+	/* margin:  auto;               中央寄せ */
+	/* width:  150px;               幅指定 */
+	/* height: 80px;                高さ指定 */
 }
 
 .subtitle {
@@ -76,6 +83,15 @@
 	font-weight: bold;
 	font-style: 'arial black';
 	font-size: 30px;
+	/* position: absolute;          位置指定 */
+	/* padding: 20px;               余白指定 */
+	/* top:  0;                     位置指定 */
+	/* bottom:  0;                  位置指定 */
+	/* left:  0;                    位置指定 */
+	/* right:  0;                   位置指定 */
+	/* margin:  auto;               中央寄せ */
+	/* width:  150px;               幅指定 */
+	/* height: 80px;                高さ指定 */
 }
 
 /* new2page */
@@ -275,6 +291,7 @@
 .hb-subt {
 	color: #ffffff;
 	font-size: 50px;
+	font-weight: bold;
 }
 
 .hb {
@@ -283,10 +300,105 @@
 	justify-content: center;
 }
 
+/* .hb-img {
+	float: left;
+} */
+
 .hb-text {
 	color: #ffffff;
 	text-align: center;
 	padding: 10px;
 	margin-bottom: 10px;
-	width: 300px;
+	width: 700px;
+	/* float: left; */
+}
+
+@media screen and (max-width: 480px) {
+	.title-content {
+		height: 812px;
+		/* width: 375px; */
+		position: relative;
+		/*中央揃えしたい要素の親要素に指定*/
+		background-color: #3CB371;
+	}
+	/* title */
+	.title {
+		/* background: yellow; */
+		position: absolute;
+		/*要素を浮かす*/
+		/*relativeを指定した親要素を支点とした位置をすべて0に指定↓*/
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		margin: auto;
+		/*上下左右中央に*/
+		width: 375px;
+		/*widthの指定は必須*/
+		height: 375px;
+		/*heightの指定は必須*/
+	}
+	.maintitle {
+		margin: 70px 0 auto;
+		color: #ffffff;
+		font-weight: bold;
+		font-style: 'arial black';
+		font-size: 70px;
+	}
+	.subtitle {
+		margin: 10px;
+		margin-bottom: 50px;
+		color: #ffffff;
+		font-weight: bold;
+		font-style: 'arial black';
+		font-size: 20px;
+	}
+	.result {
+		font-size: 20px;
+		color: #ffffff;
+		margin: 20px;
+	}
+	.izonndo {
+		font-size: 25px;
+		line-height: 100px;
+	}
+	.izonndo-text {
+		color: #ffffff;
+		font-size: 20px;
+		margin: 20px;
+	}
+	#span3 {
+		color: #ffffff;
+	}
+	.izonndo-se {
+		font-size: 15px;
+		/* display: flex; */
+		/* margin: 20px auto; */
+		/* justify-content: center; */
+		/* text-align: center; */
+		width: 300px;
+	}
+	#span4 {
+		color: #ffffff;
+	}
+	.hb-subt {
+		color: #ffffff;
+		font-size: 30px;
+	}
+	.hb {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	/* .hb-img {
+		float: left;
+	} */
+	.hb-text {
+		color: #ffffff;
+		text-align: center;
+		padding: 10px;
+		margin-bottom: 10px;
+		width: 300px;
+		/* float: left; */
+	}
 }
