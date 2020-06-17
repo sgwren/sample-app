@@ -503,11 +503,100 @@ document.addEventListener('init', function (event) {
   if (page.matches('#second-2-page')) {
 
     window.onclick = function func1() {
-      var input_register = document.getElementById("input_register").value;
-      // input_register = "入力された内容は「" + input_register + "」です。";
-      // document.getElementById("output_register").innerHTML = input_register;
-      console.log(input_register);
-    }
+
+      var saveStorage = function (key, val) {
+        localStorage.setItem(key, JSON.stringify(val));
+      };
+      var getStorage = function (key) {
+        var obj = localStorage.getItem(key);
+        return JSON.parse(obj);
+      };
+
+      var add = function () {
+        var ttl = $(".list #output_register").val();
+        // bdy = $(".list #body").val();
+        addMemo(ttl);
+        saveMemo(ttl);
+      };
+
+      var addMemo = function (ttl) {
+        var template =
+          '<input type="text" id="input_register" class="register_class" readonly="readonly" value="%s"/>';
+        template = template.replace('%s', ttl);
+
+
+        $("#memoArea").append(template);
+
+        $(".list #output_register").val('');
+      }
+
+      memoArr = [];
+      var storageKey = 'memoObj';
+
+      var saveMemo = function (ttl) {
+        var memoObj = {
+          ttl: ttl,
+        };
+        memoArr.push(memoObj);
+        saveStorage(storageKey, memoArr);
+      }
+
+      var resetMemo = function () {
+        $("#memoArea").children().remove();
+        window.localStorage.clear();
+      }
+
+      var readMemo = function () {
+        var memoObjs = getStorage(storageKey);
+        if (memoObjs.length == null) return;
+        for (var i = 0; i < memoObjs.length; i++) {
+          var memoObj = memoObjs[i];
+          var ttl = memoObj.ttl;
+          var memoObj = {
+            ttl: ttl,
+          };
+          memoArr.push(memoObj);
+          saveStorage(storageKey, memoArr);
+          addMemo(ttl);
+        }
+      };
+
+      //ページ読込み時にメモ復帰
+      readMemo();
+
+      //イベントハンドル
+      $("#btnAdd").on('click', function () {
+        add();
+      });
+      $("#btnReset").on('click', function () {
+        resetMemo();
+      });
+
+    };
+
+    // var input_register = document.getElementById("input_register").value;
+    //   var input_register = "";
+    //     if(!localStorage.getItem('input_register')) {
+    //       input_register = "データがありません";
+    //     } else {
+    //       input_register = localStorage.getItem('input_register');
+    //     }
+    //     console.log(`input_register= ${input_register}`);
+    //     // document.getElementById("output_register").innerHTML = input_register;
+
+
+    //   localStorage.getItem('input_register');
+    //   localStorage.setItem('input_register', input_register);
+    //   // input_register = "入力された内容は「" + input_register + "」です。";
+    //   // document.getElementById("output_register").innerHTML = input_register;
+    //   console.log(input_register);
+
+    //   // function save() {
+    //   //   var mydata = document.getElementById("mydata_in").value;
+    //   //   console.log(`mydata_in = ${mydata_in}`);
+    //   //   localStorage.setItem('mydata', mydata);
+    //   // }
+    // }
 
     page.querySelector('#push2-button').onclick = function () {
       document.querySelector('#navigator').pushPage('page2-3.html');
@@ -525,10 +614,10 @@ document.addEventListener('init', function (event) {
     // if (func1().onclick) {
     // input_register = "入力された内容は「" + input_register + "」です。";
     // var input_register = document.getElementById("input_register").value;
-    document.getElementById("output_register").innerHTML = input_register;
+    document.getElementById("output_register").innerHTML = input_register.value;
     // document.getElementById("input_register").innerHTML = input_register;
     // console.log(input_register);
-    console.log(output_register);
+    console.log(document.getElementById("output_register"));
     // }
     // }
 
