@@ -68,6 +68,7 @@
             <div class="subtitle">スマホ依存を少しでも解消するアプリ</div>
             <ons-button type="button" value="ボタン" id="push-button" />QUESTION</ons-button>
             <ons-button type="button" value="ボタン" id="push2-button" />NO! スマホ</ons-button>
+            <ons-button type="button" value="ボタン" id="push3-button" />オススメ趣味一覧</ons-button>
           </div>
         </div>
       </div>
@@ -86,7 +87,7 @@
       <div class="content" style="text-align: center">
 
         <div class="sa-check">
-          <h1>スマホ依存度チェック</h1>
+          <h1>あなたはどれだけスマホを操作してる？</h1>
         </div>
 
         <div class="question">
@@ -106,25 +107,25 @@
           <br>
 
           <h2>２問目</h2>
-          <h2>読書をする習慣は</h2>
+          <h2>暇な時、読書かスマホなら…</h2>
           <div class="que-scale">
             <div class="box">
               <input type="radio" id="radio3" name="question2" value="yes" />
-              <label for="radio3">ない（なくなった）</label><br>
+              <label for="radio3">スマホを操作する</label><br>
               <input type="radio" id="radio4" name="question2" value="no" />
-              <label for="radio4">ある</label>
+              <label for="radio4">読書をする</label>
             </div>
           </div>
           <br>
 
           <h2>３問目</h2>
-          <h2>運動する習慣は</h2>
+          <h2>暇な時、運動かスマホなら…</h2>
           <div class="que-scale">
             <div class="box">
               <input type="radio" id="radio5" name="question3" value="yes" />
-              <label for="radio5">ない（なくなった）</label><br>
+              <label for="radio5">スマホを操作する</label><br>
               <input type="radio" id="radio6" name="question3" value="no" />
-              <label for="radio6">ある</label>
+              <label for="radio6">運動をする</label>
             </div>
           </div>
           <br>
@@ -178,19 +179,19 @@
           <br>
 
           <h2>８問目</h2>
-          <h2>休日の外出は</h2>
+          <h2>予定のない休日の過ごし方は</h2>
           <div class="que-scale">
             <div class="box">
               <input type="radio" id="radio15" name="question8" value="yes" />
-              <label for="radio15">予定がなければ家にいる</label><br>
+              <label for="radio15">スマホでネットや<br>動画、ゲーム等をする</label><br>
               <input type="radio" id="radio16" name="question8" value="no" />
-              <label for="radio16">予定がなくても出かける</label>
+              <label for="radio16">あまりスマホを<br>操作しないことをする</label>
             </div>
           </div>
           <br>
 
           <h2>９問目</h2>
-          <h2>歩行しているときも、スマホを持ち歩きスマホをチェックしている</h2>
+          <h2>歩行しているときも、スマホを持ち歩き、チェックしている</h2>
           <div class="que-scale">
             <div class="box">
               <input type="radio" id="radio17" name="question9" value="yes" />
@@ -236,7 +237,7 @@
       <div class="content" style="text-align: center">
         <div class="result">結果発表</div>
 
-        <div class="izonndo">あなたのスマホ依存度は <span id="span2" style="color: #ff0000; font-size : 50px"></span>％です！</div>
+        <div class="izonndo">あなたのスマホ夢中度は <span id="span2" style="color: #ff0000; font-size : 50px"></span>％です！</div>
 
         <div class="messeage">
           <div class="container">
@@ -517,7 +518,7 @@
         <div class="title">
           <div class="li_title">一覧</div>
           <div class="list">
-            <div><span id="output_register" style="font-weight: bold;"></span></div>
+            <div><span id="output_register" value="" style="font-weight: bold;"></span></div>
           </div>
 
           <!-- <ons-button type="button" value="ボタン" id="push2-button"  />登録</ons-button>
@@ -528,6 +529,28 @@
       </div>
     </ons-page>
   </ons-template>
+
+
+
+  <ons-template id="page3-2.html">
+    <ons-page id="second-3-page">
+      <ons-toolbar>
+        <div class="center">A LITTLE</div>
+      </ons-toolbar>
+      <div class="content" style="text-align: center">
+        <!-- <div class="title-content"> -->
+        <div class="title">
+          <div class="maintitle">オススメの趣味一覧</div>
+          <div class="subtitle">どれがいい？</div>
+
+          <ons-button type="button" onclick="func1()" value="ボタン" id="push3-button" />登録</ons-button>
+          <ons-button id="pop-button">戻る</ons-button>
+        </div>
+        <!-- </div> -->
+      </div>
+    </ons-page>
+  </ons-template>
+
 
 
 

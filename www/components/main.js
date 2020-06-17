@@ -3,15 +3,23 @@ document.addEventListener('init', function (event) {
   var page = event.target;
   // window.onButtonClick = function onButtonClick() {
 
+  // 1 push
   // 1-1
   if (page.matches('#first-page')) {
     page.querySelector('#push-button').onclick = function () {
       document.querySelector('#navigator').pushPage('page2.html');
     };
   }
+  // 1-2
   if (page.matches('#first-page')) {
     page.querySelector('#push2-button').onclick = function () {
       document.querySelector('#navigator').pushPage('page2-2.html');
+    };
+  }
+  // 1-3
+  if (page.matches('#first-page')) {
+    page.querySelector('#push3-button').onclick = function () {
+      document.querySelector('#navigator').pushPage('page3-2.html');
     };
   }
 
@@ -22,6 +30,11 @@ document.addEventListener('init', function (event) {
     };
   }
   if (page.matches('#second-2-page')) {
+    page.querySelector('#pop-button').onclick = function () {
+      document.querySelector('#navigator').popPage();
+    };
+  }
+  if (page.matches('#second-3-page')) {
     page.querySelector('#pop-button').onclick = function () {
       document.querySelector('#navigator').popPage();
     };
@@ -222,9 +235,9 @@ document.addEventListener('init', function (event) {
 
     // function clickBtn1{
     if (sum >= 90) {
-      document.getElementById("span3").innerHTML = "高い";
+      document.getElementById("span3").innerHTML = "凄く高い";
     } else if (sum >= 70) {
-      document.getElementById("span3").innerHTML = "まあまあ高い";
+      document.getElementById("span3").innerHTML = "高い";
     } else if (sum >= 50) {
       document.getElementById("span3").innerHTML = "普通";
     } else if (sum >= 30) {
@@ -234,13 +247,13 @@ document.addEventListener('init', function (event) {
     }
 
     if (sum >= 90) {
-      document.getElementById("span4").innerHTML = "重度のスマホ依存症と言ってもいい状態になっているようです。 <br> あなたにとってスマホは単なるツールではなく、お守りのような存在に <br> なくても生活できると頭ではわかっていますが、実際はスマホを手放せず、スマホがないと不安になってしまうことが。 <br> 無意識のうちにスマホを手にしてしまうため、あえてガラケーに戻してみるなど荒療治で対処を。スマホを手放すと使える時間も一気に増えそうです。";
+      document.getElementById("span4").innerHTML = "あなたにとってスマホは単なるツールではなく、お守りのような存在に。<br>なくても生活できると頭ではわかっていますが、実際はスマホを手放せず、スマホがないと不安になってしまうことが。 <br> 無意識のうちにスマホを手にしてしまうため、なにか他に打ち込めることを探してみては";
 
     } else if (sum >= 70) {
-      document.getElementById("span4").innerHTML = "残念ながら、すでに中程度のスマホ依存に陥っている可能性があります。<br> 最近、スマホが手元にないと、どう過ごしていいかわからなくなることはありませんか？ <br> このままではスマホなしではいられない重度のスマホ依存状態になる危険があります。<br> 休みの日にはスマホの電源を切るようにするなどして、スマホなしで生活する日を間を作ってみて。<br> スマホなしでも大丈夫だと実感できれば、スマホ依存から抜け出られるように。";
+      document.getElementById("span4").innerHTML = "このままではスマホなしではいられない重度のスマホ依存状態になる危険があります。<br> 休みの日にはスマホの電源を切るようにするなどして、スマホなしで生活する日を間を作ってみて。<br> スマホなしでも大丈夫だと実感できれば、スマホ依存から抜け出られるように。";
 
     } else if (sum >= 50) {
-      document.getElementById("span4").innerHTML = "自分では意識していないかもしれませんが、スマホ依存症の予備軍と言ってもよさそう。 <br> 目の前に友だちがいても、スマホ経由で会話をしてしまう、スマホが鳴らないとさみしくなるなど、このままでは、スマホ依存度はどんどん高まっていく危険が。 <br> 用がないときにはスマホに触らない、友だちとは直接会って遊ぶようにするなど、スマホへの接触回数を減らすことが必要になっていきそうです。";
+      document.getElementById("span4").innerHTML = "自分では意識していないかもしれませんが、スマホ依存症の予備軍と言ってもよさそう。 <br> 用がないときにはスマホに触らない、友だちとは直接会って遊ぶようにするなど、スマホへの接触回数を減らすことが必要になっていきそうです。";
 
     } else if (sum >= 30) {
       document.getElementById("span4").innerHTML = "現状では、スマホへの依存は心配しなくても大丈夫そう。 <br> ただし、スマホとの接触時間が増えるにつれ、少しずつスマホ依存の傾向が出てきているようです。 最近、暇をつぶす際は、まずスマホを手に取っていませんか？ それが実はスマホ依存への第一歩。 <br> 暇なときは本を読む、スマホだけでなくパソコンも活用するなどして、メリハリをつけてスマホを使って。そうすれば、スマホ依存度は変わってきます。";
@@ -502,101 +515,19 @@ document.addEventListener('init', function (event) {
 
   if (page.matches('#second-2-page')) {
 
-    window.onclick = function func1() {
+    page.querySelector('#push2-button').onclick = function () {
+      // var memoObj = [localStorage.setItem('memoObj', input_register.value)];
 
-      var saveStorage = function (key, val) {
-        localStorage.setItem(key, JSON.stringify(val));
-      };
-      var getStorage = function (key) {
-        var obj = localStorage.getItem(key);
-        return JSON.parse(obj);
-      };
+      // localStorage.setItem('memoObj', input_register.value);
+      // localStorage.setItem('memoObj', JSON.stringify(input_register.value));
+      // document.querySelector('#navigator').pushPage('page2-3.html', { data: input_register.value });
+      // document.querySelector('#navigator').pushPage('page2-3.html', { data: JSON.stringify(input_register.value) });
 
-      var add = function () {
-        var ttl = $(".list #output_register").val();
-        // bdy = $(".list #body").val();
-        addMemo(ttl);
-        saveMemo(ttl);
-      };
-
-      var addMemo = function (ttl) {
-        var template =
-          '<input type="text" id="input_register" class="register_class" readonly="readonly" value="%s"/>';
-        template = template.replace('%s', ttl);
-
-
-        $("#memoArea").append(template);
-
-        $(".list #output_register").val('');
-      }
-
-      memoArr = [];
-      var storageKey = 'memoObj';
-
-      var saveMemo = function (ttl) {
-        var memoObj = {
-          ttl: ttl,
-        };
-        memoArr.push(memoObj);
-        saveStorage(storageKey, memoArr);
-      }
-
-      var resetMemo = function () {
-        $("#memoArea").children().remove();
-        window.localStorage.clear();
-      }
-
-      var readMemo = function () {
-        var memoObjs = getStorage(storageKey);
-        if (memoObjs.length == null) return;
-        for (var i = 0; i < memoObjs.length; i++) {
-          var memoObj = memoObjs[i];
-          var ttl = memoObj.ttl;
-          var memoObj = {
-            ttl: ttl,
-          };
-          memoArr.push(memoObj);
-          saveStorage(storageKey, memoArr);
-          addMemo(ttl);
-        }
-      };
-
-      //ページ読込み時にメモ復帰
-      readMemo();
-
-      //イベントハンドル
-      $("#btnAdd").on('click', function () {
-        add();
-      });
-      $("#btnReset").on('click', function () {
-        resetMemo();
-      });
-
+      return;
     };
-
-    // var input_register = document.getElementById("input_register").value;
-    //   var input_register = "";
-    //     if(!localStorage.getItem('input_register')) {
-    //       input_register = "データがありません";
-    //     } else {
-    //       input_register = localStorage.getItem('input_register');
-    //     }
-    //     console.log(`input_register= ${input_register}`);
-    //     // document.getElementById("output_register").innerHTML = input_register;
+    console.log(localStorage.setItem('memoObj', JSON.stringify(input_register.value)));
 
 
-    //   localStorage.getItem('input_register');
-    //   localStorage.setItem('input_register', input_register);
-    //   // input_register = "入力された内容は「" + input_register + "」です。";
-    //   // document.getElementById("output_register").innerHTML = input_register;
-    //   console.log(input_register);
-
-    //   // function save() {
-    //   //   var mydata = document.getElementById("mydata_in").value;
-    //   //   console.log(`mydata_in = ${mydata_in}`);
-    //   //   localStorage.setItem('mydata', mydata);
-    //   // }
-    // }
 
     page.querySelector('#push2-button').onclick = function () {
       document.querySelector('#navigator').pushPage('page2-3.html');
@@ -604,20 +535,17 @@ document.addEventListener('init', function (event) {
   }
   else if (page.matches('#third-2-page')) {
     page.querySelector('#pop-button').onclick = function () {
-      document.querySelector('#navigator').resetToPage('page1.html');
+      document.querySelector('#navigator').replacePage('page1.html');
     };
   }
 
   if (page.matches('#third-2-page')) {
 
-    // window.onclick = function func1() {
-    // if (func1().onclick) {
-    // input_register = "入力された内容は「" + input_register + "」です。";
-    // var input_register = document.getElementById("input_register").value;
+    // document.getElementById("output_register").innerHTML = JSON.parse(localStorage.getItem('memoObj'));
+    // document.getElementById("output_register").innerHTML = localStorage.setItem('memoObj', JSON.stringify(input_register.value));
     document.getElementById("output_register").innerHTML = input_register.value;
-    // document.getElementById("input_register").innerHTML = input_register;
-    // console.log(input_register);
     console.log(document.getElementById("output_register"));
+    return;
     // }
     // }
 
@@ -636,6 +564,8 @@ document.addEventListener('init', function (event) {
 
 
   // }
+
+  
 });
 
 

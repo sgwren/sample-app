@@ -1,4 +1,4 @@
-#push-button, #push2-button {
+#push-button, #push2-button, #push3-button {
 	display: inline-block;
 	padding: 0.5em 1em;
 	text-decoration: none;
@@ -354,7 +354,8 @@
 	.izonndo-text {
 		color: #ffffff;
 		font-size: 20px;
-		margin: 20px;
+		margin: 0px;
+		background-color: rgb(21, 167, 87);
 	}
 	#span3 {
 		color: #ffffff;
@@ -363,15 +364,18 @@
 		font-size: 15px;
 		/* display: flex; */
 		/* margin: 20px auto; */
-		/* justify-content: center; */
-		/* text-align: center; */
+		justify-content: center;
+		text-align: center;
 		width: 300px;
+		margin: auto;
 	}
 	#span4 {
 		color: #ffffff;
+		/* background-color: #739b06; */
 	}
 	.hb-subt {
 		color: #ffffff;
+		background-color: #009900;
 		font-size: 30px;
 	}
 	.hb {
