@@ -1,4 +1,4 @@
-#push-button, #push2-button, #push3-button {
+#push-button, #push2-button, #push3-button, #bath-button, #book-button, #exercise-button, #todo-button, #morning-button, #game-button, #movie-button, #holiday-button, #walk-button, #sleep-button {
 	display: inline-block;
 	padding: 0.5em 1em;
 	text-decoration: none;
@@ -39,6 +39,11 @@
 }
 
 /* new1page */
+.center{
+	font-weight: bold;
+	font-style: 'arial black';
+	color: #3CB371;
+}
 
 .content {
 	background-color: #3CB371;
@@ -46,23 +51,12 @@
 
 /* title */
 
-.title {}
-
 .maintitle {
 	margin: 70px 0 auto;
 	color: #ffffff;
 	font-weight: bold;
 	font-style: 'arial black';
 	font-size: 100px;
-	/* position: absolute;          位置指定 */
-	/* padding: 20px;               余白指定 */
-	/* top:  0;                     位置指定 */
-	/* bottom:  0;                  位置指定 */
-	/* left:  0;                    位置指定 */
-	/* right:  0;                   位置指定 */
-	/* margin:  auto;               中央寄せ */
-	/* width:  150px;               幅指定 */
-	/* height: 80px;                高さ指定 */
 }
 
 .subtitle {
@@ -72,15 +66,18 @@
 	font-weight: bold;
 	font-style: 'arial black';
 	font-size: 30px;
-	/* position: absolute;          位置指定 */
-	/* padding: 20px;               余白指定 */
-	/* top:  0;                     位置指定 */
-	/* bottom:  0;                  位置指定 */
-	/* left:  0;                    位置指定 */
-	/* right:  0;                   位置指定 */
-	/* margin:  auto;               中央寄せ */
-	/* width:  150px;               幅指定 */
-	/* height: 80px;                高さ指定 */
+}
+
+.title-button {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 20px;
+}
+
+#push-button, #push2-button, #push3-button {
+	width: 50%;
+	margin: 10px;
 }
 
 /* new2page */
@@ -166,7 +163,15 @@
 
 /* page3 */
 
+.result {
+	font-size: 30px;
+	color: #ffffff;
+	margin: 20px;
+}
+
 .izonndo {
+	font-size: 50px;
+	line-height: 100px;
 	padding: 0.5em;
 	/*文字周りの余白*/
 	color: #010101;
@@ -175,6 +180,62 @@
 	/*背景色*/
 	border-bottom: solid 3px#ff0000;
 	/*下線*/
+}
+
+.izonndo-text {
+	color: #ffffff;
+	font-size: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#span3 {
+	color: #ffffff;
+}
+
+.izonndo-se {
+	font-size: 20px;
+	display: flex;
+	margin: 20px auto;
+	justify-content: center;
+	text-align: center;
+	width: 1000px;
+}
+
+#span4 {
+	color: #ffffff;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+/* .hb-bath {
+	background-color: coral;
+} */
+
+.hb-subt {
+	color: #ffffff;
+	background-color: #009900;
+	font-size: 40px;
+	font-weight: bold;
+}
+
+.hb {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.hb_img {
+	width: 500px;
+}
+
+.hb-text {
+	color: #ffffff;
+	text-align: center;
+	padding: 10px;
+	margin: auto;
+	width: 700px;
+	font-size: 25px;
 }
 
 /*質問*/
@@ -243,72 +304,206 @@
 	background: #da3c41;
 }
 
-.result {
+/* questions */
+
+#questions {
+	margin-bottom: 16px;
+	font-weight: bold;
 	font-size: 30px;
-	color: #ffffff;
-	margin: 20px;
 }
 
-.izonndo {
-	font-size: 50px;
-	line-height: 100px;
-}
-
-.izonndo-text {
-	color: #ffffff;
+#choices {
+	list-style: none;
+	padding: 0px;
+	margin-bottom: 16px;
 	font-size: 20px;
-	margin: 20px;
 }
 
-#span3 {
-	color: #ffffff;
+#choices>li {
+	border: 1px solid #cccccc;
+	background-color: #ffffff;
+	border-radius: 4px;
+	padding: 10px;
+	margin-bottom: 10px;
+	cursor: pointer;
 }
 
-.izonndo-se {
-	font-size: 20px;
-	display: flex;
-	margin: 20px auto;
-	justify-content: center;
-	text-align: center;
-	width: 1000px;
+#choices>li:hover {
+	background: #f8f8f8;
 }
 
-#span4 {
-	color: #ffffff;
+#btn.disabled {
+	background: #cccccc;
+	box-shadow: 0 4px 0 #bbbbbb;
+	opacity: 0.7;
 }
 
-.hb-subt {
-	color: #ffffff;
-	font-size: 50px;
+/* // #12 正解、不正解をわかりやすくしよう */
+
+#choices>li.correct {
+	background: #d4edda;
+	border-color: #c3e6cb;
+	color: #155724;
 	font-weight: bold;
 }
 
-.hb {
+#choices>li.wrong {
+	/* background: #f8d8da; */
+	border-color: #f5c6cb;
+	color: #721;
+	font-weight: bold;
+}
+
+/* // #13 解答状況を管理しよう */
+
+#choices>li.correct::after {
+	content: "...correct!";
+}
+
+#choices>li.wrong::after {
+	content: "...wrong!";
+}
+
+/* / #17 スコアを表示する領域を作ろう */
+
+.containers {
+	width: 800px;
+	margin: 8px auto;
+	/* background: #ffffff; */
+	border-radius: 4px;
+	padding: 16px;
+	position: relative;
+}
+
+#results>p {
+	font-size: 20px;
+}
+
+#btn, #results>a {
+	background: #3498db;
+	padding: 8px;
+	border-radius: 4px;
+	cursor: pointer;
+	text-align: center;
+	color: #ffffff;
+	box-shadow: 0 4px 0 #2880b9;
+}
+
+#results>a {
+	display: block;
+	text-decoration: none;
+}
+
+/* #19 スコア表示を完成させよう */
+
+#results {
+	position: absolute;
+	width: 500px;
+	background: #ffffff;
+	padding: 30px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	top: 50px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	border-radius: 4px;
+	text-align: center;
+	transition: 0.4s;
+}
+
+#results.hidden {
+	transform: translateY(-500px);
+}
+
+/* page3-2.html */
+
+.hb_list_title {
+	color: #ffffff;
+	font-weight: bold;
+	font-style: 'arial black';
+	font-size: 30px;
+	margin: 30px;
+}
+
+.hb_list_subtitle {
+	color: #ffffff;
+	font-weight: bold;
+	font-style: 'arial black';
+	font-size: 20px;
+	margin: 30px;
+}
+
+.hbselect-button {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	margin: 20px;
 }
 
-/* .hb-img {
-	float: left;
-} */
+#bath-button, #book-button, #exercise-button, #todo-button, #morning-button, #game-button, #movie-button, #holiday-button, #walk-button, #sleep-button {
+	width: 40%;
+	margin: 10px;
+}
 
-.hb-text {
+.hb_selected_title {
+	text-align: center;
+	margin: 10px 0 auto;
+	color: #ffffff;
+	font-weight: bold;
+	font-style: 'arial black';
+	font-size: 70px;
+}
+
+.hb_selected_subtitle {
+	text-align: center;
+	margin: 30px;
+	color: #ffffff;
+	font-weight: bold;
+	font-style: 'arial black';
+	font-size: 30px;
+}
+
+.hb_selected_img {
+	width: 20%;
+	margin: 10px;
+}
+
+.hb-se {
 	color: #ffffff;
 	text-align: center;
-	padding: 10px;
-	margin-bottom: 10px;
-	width: 700px;
-	/* float: left; */
+	margin: 10px;
+	font-size: 20px;
 }
+
+/* /////タブレット画面///// */
+
+@media screen and (max-width: 1000px) {
+	.izonndo-se {
+		width: 500px;
+	}
+	.hb_img {
+		width: 300px;
+	}
+	.hb-text {
+		width: 480px;
+		font-size: 20px;
+	}
+	.containers {
+		width: 480px;
+	}
+	#results {
+		width: 300px;
+	}
+}
+
+/* /////スマホ画面///// */
 
 @media screen and (max-width: 480px) {
 	.title-content {
-		height: 812px;
-		/* width: 375px; */
+		height: 500px;
 		position: relative;
 		/*中央揃えしたい要素の親要素に指定*/
-		background-color: #3CB371;
+		/* background-color: rgb(0, 3, 2); */
 	}
 	/* title */
 	.title {
@@ -322,76 +517,71 @@
 		left: 0;
 		margin: auto;
 		/*上下左右中央に*/
-		width: 375px;
+		/* width: 375px; */
 		/*widthの指定は必須*/
 		height: 375px;
 		/*heightの指定は必須*/
 	}
 	.maintitle {
-		margin: 70px 0 auto;
-		color: #ffffff;
-		font-weight: bold;
-		font-style: 'arial black';
-		font-size: 70px;
+		margin: 1px 0 auto;
+		font-size: 65px;
 	}
 	.subtitle {
-		margin: 10px;
-		margin-bottom: 50px;
-		color: #ffffff;
-		font-weight: bold;
-		font-style: 'arial black';
 		font-size: 20px;
 	}
+	#push-button, #push2-button, #push3-button {
+		width: 70%;
+	}
+	/* 結果発表 */
 	.result {
 		font-size: 20px;
-		color: #ffffff;
-		margin: 20px;
 	}
 	.izonndo {
 		font-size: 25px;
-		line-height: 100px;
 	}
 	.izonndo-text {
-		color: #ffffff;
-		font-size: 20px;
 		margin: 0px;
-		background-color: rgb(21, 167, 87);
-	}
-	#span3 {
-		color: #ffffff;
 	}
 	.izonndo-se {
 		font-size: 15px;
-		/* display: flex; */
-		/* margin: 20px auto; */
-		justify-content: center;
-		text-align: center;
 		width: 300px;
 		margin: auto;
 	}
-	#span4 {
-		color: #ffffff;
-		/* background-color: #739b06; */
-	}
 	.hb-subt {
-		color: #ffffff;
-		background-color: #009900;
 		font-size: 30px;
 	}
-	.hb {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
+	.hb_img {
+		width: 200px;
 	}
-	/* .hb-img {
-		float: left;
-	} */
 	.hb-text {
-		color: #ffffff;
-		text-align: center;
-		padding: 10px;
 		margin-bottom: 10px;
 		width: 300px;
-		/* float: left; */
+	}
+	/* page3-2.html */
+	
+	.hb_selected_img {
+		width: 40%;
+	}
+	.hb-se {
+		margin: auto;
+		width: 300px;
+		font-size: 15px;
+	}
+	.hb-button {
+		clear: both;
+		text-align: center;
+	}
+	/* questions */
+	#questions {
+		font-size: 20px;
+	}
+	#choices {
+		font-size: 15px;
+	}
+	.containers {
+		width: 280px;
+	}
+	#results {
+		width: 200px;
 	}
 }

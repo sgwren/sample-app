@@ -59,16 +59,18 @@
   <ons-template id="page1.html">
     <ons-page id="first-page">
       <ons-toolbar>
-        <div class="center">A LITTLE</div>
+        <div class="center"></div>
       </ons-toolbar>
       <div class="content" style="text-align: center">
         <div class="title-content">
           <div class="title">
             <div class="maintitle">A LITTLE</div>
             <div class="subtitle">スマホ依存を少しでも解消するアプリ</div>
-            <ons-button type="button" value="ボタン" id="push-button" />QUESTION</ons-button>
-            <ons-button type="button" value="ボタン" id="push2-button" />NO! スマホ</ons-button>
-            <ons-button type="button" value="ボタン" id="push3-button" />オススメ趣味一覧</ons-button>
+            <div class="title-button">
+              <ons-button type="button" value="ボタン" id="push-button" />QUESTION</ons-button>
+              <ons-button type="button" value="ボタン" id="push2-button" />NO! スマホ</ons-button>
+              <ons-button type="button" value="ボタン" id="push3-button" />オススメ趣味一覧</ons-button>
+            </div>
           </div>
         </div>
       </div>
@@ -231,9 +233,9 @@
         <div class="left">
           <ons-back-button>Page 2</ons-back-button>
         </div>
-
         <div class="center">A LITTLE</div>
       </ons-toolbar>
+
       <div class="content" style="text-align: center">
         <div class="result">結果発表</div>
 
@@ -241,244 +243,121 @@
 
         <div class="messeage">
           <div class="container">
-            <div class="izonndo-text">依存度は<span id="span3" style="color: #ff0000; font-size : 30px"></span>です。</h3>
-              <div class="izonndo-se"><span id="span4"></span></div>
-            </div>
+            <div class="izonndo-text">夢中度は<span id="span3" style="color: #ff0000; font-size : 30px"></span>です。</div>
+            <div class="izonndo-se"><span id="span4"></span></div>
           </div>
-
-          <!-- 1 -->
-          <div class="hb-bath">
-            <div class="hb-subt"><span id="span5-0"></span></div>
-            <div class="hb" id="r1hb">
-              <div class="r1hb-1">
-                <div class="hb-img"><span id="span5"></span></div>
-                <div class="hb-text" id="span55-0"></div>
-                <!-- <span id="u1-1"></span> -->
-              </div>
-
-              <!-- <div class="r1hb-2">
-                  <span id="span5-1"></span>
-                  <div class="hb-text" id="span55-1"></div>
-                </div>
-                
-                <div class="r1hb-3">
-                  <span id="span5-2"></span>
-                  <div class="hb-text" id="span55-2"></div>
-                </div> -->
-
-            </div>
-          </div>
-
-          <!-- 2 -->
-          <div class="hb-book">
-            <div class="hb-subt"><span id="span6-0"></span></div>
-            <div class="hb" id="r2hb">
-              <div class="r2hb-1">
-                <div class="hb-img"><span id="span6"></span></div>
-                <div class="hb-text" id="span66-0"></div>
-              </div>
-
-              <!-- <div class="r2hb-2">
-                  <span id="span6-1"></span>
-                  <div class="hb-text" id="span66-1"></div>
-                </div>
-                
-                <div class="r2hb-3">
-                  <span id="span6-2"></span>
-                  <div class="hb-text" id="span66-2"></div>
-                </div> -->
-
-            </div>
-          </div>
-
-          <!-- 3 -->
-          <div class="hb-exercise">
-            <div class="hb-subt"><span id="span7-0"></span></div>
-            <div class="hb" id="r3hb">
-              <div class="r3hb-1">
-                <div class="hb-img"><span id="span7"></span></div>
-                <div class="hb-text" id="span77-0"></div>
-              </div>
-
-              <!-- <div class="r3hb-2">
-                  <span id="span7-1"></span>
-                  <div class="hb-text" id="span77-1"></div>
-                </div>
-                
-                <div class="r3hb-3">
-                  <span id="span7-2"></span>
-                  <div class="hb-text" id="span77-2"></div>
-                </div> -->
-
-            </div>
-          </div>
-
-          <!-- 4 -->
-          <div class="hb-touch">
-            <div class="hb-subt">
-              <span id="span8-0"></span>
-            </div>
-            <div class="hb" id="r4hb">
-
-              <div class="r4hb-1">
-                <span id="span8"></span>
-                <div class="hb-text" id="span88-0"></div>
-              </div>
-
-              <!-- <div class="r4hb-2">
-                  <span id="span8-1"></span>
-                  <div class="hb-text" id="span88-1"></div>
-                </div>
-                
-                <div class="r1hb-3">
-                  <span id="span8-2"></span>
-                  <div class="hb-text" id="span88-2"></div>
-                </div> -->
-
-            </div>
-          </div>
-
-          <!-- 5 -->
-          <div class="hb-mg">
-            <div class="hb-subt">
-              <span id="span9-0"></span>
-            </div>
-            <div class="hb" id="r5hb">
-
-              <div class="r5hb-1">
-                <span id="span9"></span>
-                <div class="hb-text" id="span99-0"></div>
-              </div>
-
-              <!-- <div class="r5hb-2">
-                  <span id="span9-1"></span>
-                  <div class="hb-text" id="span99-1"></div>
-                </div>
-                
-                <div class="r5hb-3">
-                  <span id="span9-2"></span>
-                  <div class="hb-text" id="span99-2"></div>
-                </div> -->
-
-            </div>
-          </div>
-
-          <!-- 6 -->
-          <div class="hb-game">
-            <div class="hb-subt"><span id="span10-0"></span></div>
-            <div class="hb" id="r6hb">
-
-              <div class="r6hb-1">
-                <span id="span10"></span>
-                <div class="hb-text" id="span1010-0"></div>
-              </div>
-
-              <!-- <div class="r6hb-2">
-                  <span id="span10-1"></span>
-                  <div class="hb-text" id="span1010-1"></div>
-                </div>
-                
-                <div class="r6hb-3">
-                  <span id="span10-2"></span>
-                  <div class="hb-text" id="span1010-2"></div>
-                </div> -->
-
-            </div>
-          </div>
-
-          <!-- 7 -->
-          <div class="hb-movie">
-            <div class="hb-subt"><span id="span11-0"></span></div>
-            <div class="hb" id="r11hb">
-
-              <div class="r11hb-1">
-                <span id="span11"></span>
-                <div class="hb-text" id="span1111-0"></div>
-              </div>
-
-              <!-- <div class="r11hb-2">
-                  <span id="span11-1"></span>
-                  <div class="hb-text" id="span1111-1"></div>
-                </div>
-                
-                <div class="r11hb-3">
-                  <span id="span11-2"></span>
-                  <div class="hb-text" id="span1111-2"></div>
-                </div> -->
-
-            </div>
-          </div>
-
-          <!-- 8 -->
-          <div class="hb-day">
-            <div class="hb-subt"><span id="span12-0"></span></div>
-            <div class="hb" id="r12hb">
-
-              <div class="r12hb-1">
-                <span id="span12"></span>
-                <div class="hb-text" id="span1212-0"></div>
-              </div>
-
-              <!-- <div class="r12hb-2">
-                  <span id="span12-1"></span>
-                  <div class="hb-text" id="span1212-1"></div>
-                </div>
-                
-                <div class="r12hb-3">
-                  <span id="span12-2"></span>
-                  <div class="hb-text" id="span1212-2"></div>
-                </div> -->
-
-            </div>
-          </div>
-
-          <!-- 9 -->
-          <div class="hb-walk">
-            <div class="hb-subt"><span id="span13-0"></span></div>
-            <div class="hb" id="r13hb">
-
-              <div class="r13hb-1">
-                <span id="span13"></span>
-                <div class="hb-text" id="span1313-0"></div>
-              </div>
-
-              <!-- <div class="r13hb-2">
-                  <span id="span13-1"></span>
-                  <div class="hb-text" id="span1313-1"></div>
-                </div>
-                
-                <div class="r13hb-3">
-                  <span id="span13-2"></span>
-                  <div class="hb-text" id="span1313-2"></div>
-                </div> -->
-
-            </div>
-          </div>
-
-          <!-- 10 -->
-          <div class="hb-sleep">
-            <div class="hb-subt"><span id="span14-0"></span></div>
-            <div class="hb" id="r2hb">
-
-              <div class="r14hb-1">
-                <span id="span14"></span>
-                <div class="hb-text" id="span1414-0"></div>
-              </div>
-
-              <!-- <div class="r14hb-2">
-                  <span id="span14-1"></span>
-                  <div class="hb-text" id="span1414-1"></div>
-                </div>
-                
-                <div class="r14hb-3">
-                  <span id="span14-2"></span>
-                  <div class="hb-text" id="span1414-2"></div>
-                </div> -->
-            </div>
-          </div>
-          <!-- </div> -->
         </div>
-        <!-- <ons-button id="push-button">次へ</ons-button> -->
+
+        <!-- 1 -->
+        <div class="hb-bath">
+          <div class="hb-subt"><span id="span5-0"></span></div>
+          <div class="hb" id="r1hb">
+            <div class="r1hb-1">
+              <div class="hb-img"><span id="span5" ></span></div>
+              <div class="hb-text" id="span55-0"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="hb-book">
+          <div class="hb-subt"><span id="span6-0"></span></div>
+          <div class="hb" id="r2hb">
+            <div class="r2hb-1">
+              <div class="hb-img"><span id="span6"></span></div>
+              <div class="hb-text" id="span66-0"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="hb-exercise">
+          <div class="hb-subt"><span id="span7-0"></span></div>
+          <div class="hb" id="r3hb">
+            <div class="r3hb-1">
+              <div class="hb-img"><span id="span7"></span></div>
+              <div class="hb-text" id="span77-0"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="hb-touch">
+          <div class="hb-subt"><span id="span8-0"></span></div>
+          <div class="hb" id="r4hb">
+            <div class="r4hb-1">
+              <div class="hb-img"><span id="span8"></span></div>
+              <div class="hb-text" id="span88-0"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="hb-mg">
+          <div class="hb-subt"><span id="span9-0"></span></div>
+          <div class="hb" id="r5hb">
+            <div class="r5hb-1">
+              <div class="hb-img"><span id="span9"></span></div>
+              <div class="hb-text" id="span99-0"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="hb-game">
+          <div class="hb-subt"><span id="span10-0"></span></div>
+          <div class="hb" id="r6hb">
+            <div class="r6hb-1">
+              <div class="hb-img"><span id="span10"></span></div>
+              <div class="hb-text" id="span1010-0"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7 -->
+        <div class="hb-movie">
+          <div class="hb-subt"><span id="span11-0"></span></div>
+          <div class="hb" id="r11hb">
+            <div class="r11hb-1">
+              <div class="hb-img"><span id="span11"></span></div>
+              <div class="hb-text" id="span1111-0"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 8 -->
+        <div class="hb-day">
+          <div class="hb-subt"><span id="span12-0"></span></div>
+          <div class="hb" id="r12hb">
+            <div class="r12hb-1">
+              <div class="hb-img"><span id="span12"></span></div>
+              <div class="hb-text" id="span1212-0"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 9 -->
+        <div class="hb-walk">
+          <div class="hb-subt"><span id="span13-0"></span></div>
+          <div class="hb" id="r13hb">
+            <div class="r13hb-1">
+              <div class="hb-img"><span id="span13"></span></div>
+              <div class="hb-text" id="span1313-0"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 10 -->
+        <div class="hb-sleep">
+          <div class="hb-subt"><span id="span14-0"></span></div>
+          <div class="hb" id="r2hb">
+            <div class="r14hb-1">
+              <div class="hb-img"><span id="span14"></span></div>
+              <div class="hb-text" id="span1414-0"></div>
+            </div>
+          </div>
+        </div>
+        
         <ons-button id="pop-button">homeへ</ons-button>
       </div>
     </ons-page>
@@ -489,21 +368,21 @@
       <ons-toolbar>
         <div class="center">A LITTLE</div>
       </ons-toolbar>
-      <div class="content" style="text-align: center">
-        <!-- <div class="title-content"> -->
-        <div class="title">
-          <div class="maintitle">登録画面</div>
-          <div class="subtitle">何をする？</div>
+      <div class="content">
 
-          <input class="register_class" type="text" id="input_register" value="">
-          <!-- <input type="button" onclick="func1()" value="送信"> -->
-          <ons-button type="button" onclick="func1()" value="ボタン" id="push2-button" />登録</ons-button>
-          <!-- <div id="output_register"></div> -->
+        <section class="containers">
+          <p id="questions"></p>
+          <ul id="choices"></ul>
+          <div id="btn" class="disabled">next</div>
+          <section id="results" class="hidden">
+            <p></p>
+            <a href="">replay?</a>
+          </section>
+        </section>
 
-          <!-- <ons-button type="button" value="ボタン" id="push2-button" />登録</ons-button> -->
-          <ons-button id="pop-button">戻る</ons-button>
+        <div class="pop2-2" style="text-align: center;">
+          <ons-button id="pop-button">homeへ</ons-button>
         </div>
-        <!-- </div> -->
       </div>
     </ons-page>
   </ons-template>
@@ -513,23 +392,18 @@
       <ons-toolbar>
         <div class="center">A LITTLE</div>
       </ons-toolbar>
+
       <div class="content" style="text-align: center">
-        <!-- <div class="title-content"> -->
         <div class="title">
           <div class="li_title">一覧</div>
           <div class="list">
             <div><span id="output_register" value="" style="font-weight: bold;"></span></div>
           </div>
-
-          <!-- <ons-button type="button" value="ボタン" id="push2-button"  />登録</ons-button>
-          <ons-button type="button" value="ボタン" id="push2-button"  />消去</ons-button> -->
           <ons-button id="pop-button">戻る</ons-button>
         </div>
-        <!-- </div> -->
       </div>
     </ons-page>
   </ons-template>
-
 
 
   <ons-template id="page3-2.html">
@@ -537,16 +411,486 @@
       <ons-toolbar>
         <div class="center">A LITTLE</div>
       </ons-toolbar>
-      <div class="content" style="text-align: center">
-        <!-- <div class="title-content"> -->
-        <div class="title">
-          <div class="maintitle">オススメの趣味一覧</div>
-          <div class="subtitle">どれがいい？</div>
 
-          <ons-button type="button" onclick="func1()" value="ボタン" id="push3-button" />登録</ons-button>
+      <div class="content" style="text-align: center">
+        <div class="hb_list_title">オススメの趣味一覧</div>
+        <div class="hb_list_subtitle">どれを見る？</div>
+        <div class="hbselect-button">
+          <ons-button type="hb-button" value="ボタン" id="bath-button" />お風呂</ons-button>
+          <ons-button type="hb-button" value="ボタン" id="book-button" />読書</ons-button>
+          <ons-button type="hb-button" value="ボタン" id="exercise-button" />運動</ons-button>
+          <ons-button type="hb-button" value="ボタン" id="todo-button" />目的</ons-button>
+          <ons-button type="hb-button" value="ボタン" id="morning-button" />朝</ons-button>
+          <ons-button type="hb-button" value="ボタン" id="game-button" />ゲーム</ons-button>
+          <ons-button type="hb-button" value="ボタン" id="movie-button" />動画</ons-button>
+          <ons-button type="hb-button" value="ボタン" id="holiday-button" />休日</ons-button>
+          <ons-button type="hb-button" value="ボタン" id="walk-button" />歩行時</ons-button>
+          <ons-button type="hb-button" value="ボタン" id="sleep-button" />就寝前</ons-button>
+        </div>
+        <ons-button id="pop-button">戻る</ons-button>
+      </div>
+    </ons-page>
+  </ons-template>
+
+  <ons-template id="bath-page.html">
+    <ons-page id="bath-page">
+      <ons-toolbar>
+        <div class="center">A LITTLE</div>
+      </ons-toolbar>
+
+      <div class="content" style="text-align: center;">
+        <div class="hb_selected">
+          <div class="hb_selected_title">お風呂</div>
+
+          <div class="hb-box">
+            <div class="hb-li">
+              <div class="hb_selected_subtitle">【マッサージ】</div>
+              <div class="hb-osususume-img">
+                <img src="./gazou/furo.png" class="hb_selected_img">
+              </div>
+              <div class="hb-se">
+                <p>
+                  お風呂でマッサージを行うときは、肩まで<span
+                    style="color: #ff0000; font-weight: bold;">5分</span>ほど浸かり、身体を充分温めてから始めましょう。<br>のぼせないために、温度を<span
+                    style="color: #ff0000; font-weight: bold;">38度から40度</span>くらいの「普段よりも少しぬるいかな」と感じる温度に設定してください。
+                  <br> 併せて、入浴時間は<span style="color: #ff0000; font-weight: bold;">20分</span>以内にしましょう。
+                </p>
+              </div>
+            </div>
+
+            <div class="hb-li">
+              <div class="hb_selected_subtitle">【入浴剤】</div>
+              <div class="hb-osususume-img">
+                <img src="./gazou/ofuro_nyuyokuzai_woman.png" class="hb_selected_img">
+              </div>
+              <div class="hb-se">
+                <p>
+                  入浴剤自体の疲労回復効果は、<span
+                    style="color: #ff0000; font-weight: bold;">入浴後の保温効果</span>が大きいです。<br>血液循環が続くことにもつながります。<br>色については平和色の黄色やグリーンとかは心が落ち着くなどの効果があります。<br>香りも温泉地をイメージできる香調にすることで、リラックス効果を得られます。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hb-button">
           <ons-button id="pop-button">戻る</ons-button>
         </div>
-        <!-- </div> -->
+      </div>
+    </ons-page>
+  </ons-template>
+
+  <ons-template id="book-page.html">
+    <ons-page id="book-page">
+      <ons-toolbar>
+        <div class="center">A LITTLE</div>
+      </ons-toolbar>
+      <div class="content" style="text-align: center">
+        <!-- <div class="title-content"> -->
+        <div class="hb_selected">
+          <div class="hb_selected_title">読書</div>
+
+          <div class="hb-box">
+            <div class="hb-li">
+              <div class="hb_selected_subtitle">【オーディオブック】</div>
+              <div class="hb-osususume-img">
+                <img src="./gazou/music_headphone_man.png" class="hb_selected_img">
+              </div>
+              <div class="hb-se">
+                <p>
+                  本を読むことが苦手なそこのあなた！それならば<span
+                  style="color: #ff0000; font-weight: bold;">「聴く」</span>ことで克服してみませんか？<br>どんなに忙しくても読書ができ、目が疲れているときでも問題なく、<br>
+                  プロによる朗読なのでとても聴きやすいので大変オススメです。
+                </p>
+              </div>
+            </div>
+
+            <div class="hb-li">
+              <div class="hb_selected_subtitle">【無理せず自分に合う読書の仕方を】
+              </div>
+              <div class="hb-osususume-img">
+                <img src="./gazou/book_tsubuse_man.png" class="hb_selected_img">
+              </div>
+              <div class="hb-se">
+                <p>
+                  苦手ならば最初のハードルを低くしましょう。<br><span
+                  style="color: #ff0000; font-weight: bold;">「読書は途中でやめても良い」</span>という気持ちを抱きつつ、<br>とりあえず<span
+                  style="color: #ff0000; font-weight: bold;">本を開く、目次を見る、面白いところだけを読む</span>などをすると気付いたら習慣していくかもしれませんよ。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hb-button">
+          <ons-button id="pop-button">戻る</ons-button>
+        </div>
+      </div>
+    </ons-page>
+  </ons-template>
+
+  <ons-template id="exercise-page.html">
+    <ons-page id="exercise-page">
+      <ons-toolbar>
+        <div class="center">A LITTLE</div>
+      </ons-toolbar>
+      <div class="content" style="text-align: center">
+        <!-- <div class="title-content"> -->
+        <div class="hb_selected">
+          <div class="hb_selected_title">運動</div>
+          <div class="hb-box">
+            <div class="hb-li">
+              <div class="hb_selected_subtitle">【日常生活の中に運動を】</div>
+              <div class="hb-osususume-img">
+                <img src="./gazou/taisou_businessman.png" class="hb_selected_img">
+              </div>
+              <div class="hb-se">
+                <p>
+                  運動を習慣づけることが出来ればそもそも悩みません。なので日常生活の中で取り入れてみましょう！<br>エレベーター、エスカレーターを使わず<span
+                  style="color: #ff0000; font-weight: bold;">階段を利用する</span>（上りはしんどいので下りだけなど）、<br>歩くときに、いつもより<span
+                  style="color: #ff0000; font-weight: bold;">早歩き</span>してみる（姿勢を正し、歩幅を大きくして歩けば軽いウォーキング効果が得られます）など<br>まずは続けることを目標に、そして楽しみながら運動をしてみてください。
+                </p>
+              </div>
+            </div>
+
+            <div class="hb-li">
+              <div class="hb_selected_subtitle">【家の中で楽しく続けられる運動】</div>
+              <div class="hb-osususume-img">
+                <img src="./gazou/video_dance_odottemita.png" class="hb_selected_img">
+              </div>
+              <div class="hb-se">
+                <p>
+                  家の中でできる運動は意外と沢山あります。<br>毎日のエクササイズを記録に残せる機能や、SNS上で仲間と交流できる機能などついている<span
+                  style="color: #ff0000; font-weight: bold;">アプリ</span>や<br><span
+                  style="color: #ff0000; font-weight: bold;">YouTube</span>のエクササイズ動画を観ながら真似したり、<br><span
+                  style="color: #ff0000; font-weight: bold;">ゲームや遊び感覚</span>で楽しみながら運動などがありますので、<br>家の中にいる時間が長くなるのを利用して、好きなエクササイズや自分に合った方法をぜひ見つけてみてください。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hb-button">
+          <ons-button id="pop-button">戻る</ons-button>
+        </div>
+      </div>
+    </ons-page>
+  </ons-template>
+
+  <ons-template id="todo-page.html">
+    <ons-page id="todo-page">
+      <ons-toolbar>
+        <div class="center">A LITTLE</div>
+      </ons-toolbar>
+      <div class="content" style="text-align: center">
+        <!-- <div class="title-content"> -->
+        <div class="hb_selected">
+          <div class="hb_selected_title">目的</div>
+          <div class="hb-box">
+            <div class="hb-li">
+              <div class="hb_selected_subtitle">【やりたいことを紙に書き出す】</div>
+              <div class="hb-osususume-img">
+                <img src="./gazou/hidarikiki.png" class="hb_selected_img">
+              </div>
+              <div class="hb-se">
+                <p>
+                  好きなことを見つける最もシンプルな方法は、<span
+                  style="color: #ff0000; font-weight: bold;">やりたいことを紙に書き出すこと</span>です。<br>「やりたいことリスト」のようなものを作って、ふと「あれやりたいな」と思ったことをメモしておく方法もいいかも。<br>やってみたことが本当にあなたの好きなことであったならば、次にやりたいことは自然と見つかるでしょう。
+                </p>
+              </div>
+            </div>
+
+            <div class="hb-li">
+              <div class="hb_selected_subtitle">【身近な人の真似をしてみる】</div>
+              <div class="hb-osususume-img">
+                <img src="./gazou/jetski_couple.png" class="hb_selected_img">
+              </div>
+              <div class="hb-se">
+                <p>
+                  「とにかく何をしたらいいか分からない」という人は、<span
+                  style="color: #ff0000; font-weight: bold;">身近な人の真似をしてみる</span>のがおすすめです。<br>同僚や友人が休日などに何をやっているのかを聞いてみて、興味のあることに挑戦してみましょう。<br>休日などに好きなことをやって充実させている人は、積極的に話題のスポットなどの情報収集を行っています。<br>身近にいる人が普段使っているキュレーションアプリやニュースアプリなどを聞いてみることも良いでしょう。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hb-button">
+          <ons-button id="pop-button">戻る</ons-button>
+        </div>
+      </div>
+    </ons-page>
+  </ons-template>
+
+  <ons-template id="morning-page.html">
+    <ons-page id="morning-page">
+      <ons-toolbar>
+        <div class="center">A LITTLE</div>
+      </ons-toolbar>
+      <div class="content" style="text-align: center">
+        <!-- <div class="title-content"> -->
+        <div class="hb_selected">
+          <div class="hb_selected_title">朝</div>
+          <div class="hb-box">
+            <div class="hb-li">
+              <div class="hb_selected_subtitle">【ひらめきが必要なこと】</div>
+              <div class="hb-osususume-img">
+                <img src="./gazou/pose_udemakuri_man.png" class="hb_selected_img">
+              </div>
+              <div class="hb-se">
+                <p>
+                  前日にしっかりとした睡眠をとることで朝の時間を有効に使うことができます。<br>その日やらなければいけないことなどを手帳に書き出し、<span
+                  style="color: #ff0000; font-weight: bold;">一日のToDo</span>を考える、<br>ドーパミンやアドレナリンの分泌量が多い朝は、ひらめき力が優れているので仕事の企画のアイデアを考えるなど<br>普段だと気づけない発見があるかもしれません。
+                </p>
+              </div>
+            </div>
+
+            <div class="hb-li">
+              <div class="hb_selected_subtitle">【ゆったりとできること】</div>
+              <div class="hb-osususume-img">
+                <img src="./gazou/kagu_rocking_chair_woman.png" class="hb_selected_img">
+              </div>
+              <div class="hb-se">
+                <p>
+                  せわしない朝が好みではないあなたは、とことんゆったりして一日のモチベーションをあげましょう！<br>起床と同時に好きな<span
+                  style="color: #ff0000; font-weight: bold;">音楽やラジオ</span>をかけたり、お気に入りの<span
+                  style="color: #ff0000; font-weight: bold;">飲み物・食べ物</span>を摂ってみてはどうでしょうか。<br>あなたが「今日も一日頑張ろう！」となれる何かを見つけみよう！
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hb-button">
+          <ons-button id="pop-button">戻る</ons-button>
+        </div>
+      </div>
+    </ons-page>
+  </ons-template>
+
+  <ons-template id="game-page.html">
+    <ons-page id="game-page">
+      <ons-toolbar>
+        <div class="center">A LITTLE</div>
+      </ons-toolbar>
+      <div class="content" style="text-align: center">
+        <!-- <div class="title-content"> -->
+        <div class="hb_selected">
+          <div class="hb_selected_title">ゲーム</div>
+          <div class="hb-box">
+            <div class="hb-li">
+              <div class="hb_selected_subtitle">【スマホ依存対策アプリ】</div>
+              <div class="hb-osususume-img">
+                <img src="./gazou/game_kakin_woman.png" class="hb_selected_img">
+              </div>
+              <div class="hb-se">
+                <p>
+                  どうしてもゲームがやめられないあなた。では<span
+                  style="color: #ff0000; font-weight: bold;">ゲームなどをしながらスマホ依存対策</span>をしましょう。<br>スマホを放置した時間だけ、魚や木が成長したり、貯まったポイントでギフト券をGETできます！<br>様々な種類がありますので、<span
+                  style="color: #ff0000; font-weight: bold;">自分に合った無理なく続けられるアプリ</span>を選ぶのが肝心です。
+                </p>
+              </div>
+            </div>
+
+            <div class="hb-li">
+              <div class="hb_selected_subtitle">【強制力強め！他のアプリの操作を禁止してくれるタイプも】</div>
+              <div class="hb-osususume-img">
+                <img src="./gazou/gaman_smartphone_man.png" class="hb_selected_img">
+              </div>
+              <div class="hb-se">
+                <p>
+                  「どうしてもスマホに触ってしまう…」という人には、こうした<span
+                  style="color: #ff0000; font-weight: bold;">一定時間スマホを触るのを禁止するタイプのアプリ</span>を入れるのもおすすめ。<br>とはいえ元々スマホは娯楽のためではなく、本来は連絡手段や情報を得るためのツールとして作られたものです。<br>全く使用せずにいれば、生活に支障が出てしまうことも考えられます。<br><span
+                  style="color: #ff0000; font-weight: bold;">無理せず計画的に</span>利用してみてはいかがでしょうか。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hb-button">
+          <ons-button id="pop-button">戻る</ons-button>
+        </div>
+      </div>
+    </ons-page>
+  </ons-template>
+
+  <ons-template id="movie-page.html">
+    <ons-page id="movie-page">
+      <ons-toolbar>
+        <div class="center">A LITTLE</div>
+      </ons-toolbar>
+      <div class="content" style="text-align: center">
+        <!-- <div class="title-content"> -->
+        <div class="hb_selected">
+          <div class="hb_selected_title">動画</div>
+          <div class="hb-box">
+            <div class="hb-li">
+              <div class="hb_selected_subtitle">【せっかくなら、有意義な時間に】</div>
+              <div class="hb-osususume-img">
+                <img src="./gazou/online_school_boy.png" class="hb_selected_img">
+              </div>
+              <div class="hb-se">
+                <p>
+                  YouTubeでは、多種多様な動画があります。なので、<span
+                  style="color: #ff0000; font-weight: bold;">普段勉強しない新しいジャンル</span>について、学んでみませんか？<br>科学、文化、英語、教育など幅広いテーマの解説Youtubeチャンネルがありますので、<br>学んだことをノートにまとめてみてはいかがでしょうか。
+                </p>
+              </div>
+            </div>
+
+            <div class="hb-li">
+              <div class="hb_selected_subtitle">【あなたの趣味に繋がる動画を】</div>
+              <div class="hb-osususume-img">
+                <img src="./gazou/video_guitar_hiitemita.png" class="hb_selected_img">
+              </div>
+              <div class="hb-se">
+                <p>
+                  このような動画配信サービスには、沢山のコンテンツがあるためついつい観すぎてしまいます。<br>それであれば、<span
+                  style="color: #ff0000; font-weight: bold;">目的を持って</span>そこから新しい趣味を見つけましょう！<br>例えば、料理系チャンネルを観ながら同じものを作ったり、筋トレ系チャンネルを観ながら一緒にしたりするなど、<br>ただ観るのではなく、何かに繋がる観方だと視聴の仕方が変わってくるかもしれません。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hb-button">
+          <ons-button id="pop-button">戻る</ons-button>
+        </div>
+      </div>
+    </ons-page>
+  </ons-template>
+
+  <ons-template id="holiday-page.html">
+    <ons-page id="holiday-page">
+      <ons-toolbar>
+        <div class="center">A LITTLE</div>
+      </ons-toolbar>
+      <div class="content" style="text-align: center">
+        <!-- <div class="title-content"> -->
+        <div class="hb_selected">
+          <div class="hb_selected_title">休日</div>
+          <div class="hb-box">
+            <div class="hb-li">
+              <div class="hb_selected_subtitle">【家族や友人の趣味に挑戦してみる】</div>
+              <div class="hb-osususume-img">
+                <img src="./gazou/gym_running_people.png" class="hb_selected_img">
+              </div>
+              <div class="hb-se">
+                <p>
+                  予定がなければ家族や友人を誘ってみて、彼らの<span
+                  style="color: #ff0000; font-weight: bold;">趣味を挑戦</span>してみてはいかがでしょうか。<br>楽しければ続けてみる、自分に合わなければ他をまた探してみましょう。<br>きっと一度やってみるだけで色々な発見があると思いますよ。
+                </p>
+              </div>
+            </div>
+
+            <div class="hb-li">
+              <div class="hb_selected_subtitle">【インドアを極める】</div>
+              <div class="hb-osususume-img">
+                <img src="./gazou/slump_good_woman_paint.png" class="hb_selected_img">
+              </div>
+              <div class="hb-se">
+                <p>
+                  そもそも外に出たくないあなたは<span
+                  style="color: #ff0000; font-weight: bold;">家の中でできる趣味</span>を作ってみましょう！<br>DIYを始めてみたり、資格やスキル習得をしてみたり、楽器・絵画など始めてみるなど<br>できることは沢山あります。<br>とにかく色々チャレンジすることで話のネタにもなるかもしれません。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hb-button">
+          <ons-button id="pop-button">戻る</ons-button>
+        </div>
+      </div>
+    </ons-page>
+  </ons-template>
+
+  <ons-template id="walk-page.html">
+    <ons-page id="walk-page">
+      <ons-toolbar>
+        <div class="center">A LITTLE</div>
+      </ons-toolbar>
+      <div class="content" style="text-align: center">
+        <!-- <div class="title-content"> -->
+        <div class="hb_selected">
+          <div class="hb_selected_title">歩行</div>
+          <div class="hb-box">
+            <div class="hb-li">
+              <div class="hb_selected_subtitle">【普段歩かない道を】</div>
+              <div class="hb-osususume-img">
+                <img src="./gazou/yagai_kyoushitsu_casual_walk.png" class="hb_selected_img">
+              </div>
+              <div class="hb-se">
+                <p>
+                  普段と違う道を歩くと<span
+                  style="color: #ff0000; font-weight: bold;">新しい発見</span>があるかもしれません。<br>美味しそうな飲食店やお洒落な雑貨屋などを探していれば歩きスマホをする気も起らないと思います。<br>普段の道でもみうらじゅんさんのように、変なものを撮ってコレクションしてみたら印象が変わるかもしれません。
+                </p>
+              </div>
+            </div>
+
+            <div class="hb-li">
+              <div class="hb_selected_subtitle">【被害者にも加害者にもなりうる】</div>
+              <div class="hb-osususume-img">
+                <img src="./gazou/aruki_sumaho_butsukaru.png" class="hb_selected_img">
+              </div>
+              <div class="hb-se">
+                <p>
+                  駅の階段で30歳代の男性がスマートフォンを見ながら階段を上がっていたところ、40歳代の男と肩がぶつかり「歩きながらスマホをいじっているんじゃない！」などと因縁を付けられ、口論になるトラブルが起きた。<br>その後、30歳代の男性は40歳代の男に体当たりされてホームから線路に転落。自力ではい上がってなんとか無事だったが、40歳代の男は町田署に<span
+                  style="color: #ff0000; font-weight: bold;">殺人未遂の疑いで逮捕</span>された。<br>などの事件は少なくありません。このような危険を避けるためにも歩きスマホは早急にやめましょう。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hb-button">
+          <ons-button id="pop-button">戻る</ons-button>
+        </div>
+      </div>
+    </ons-page>
+  </ons-template>
+
+  <ons-template id="sleep-page.html">
+    <ons-page id="sleep-page">
+      <ons-toolbar>
+        <div class="center">A LITTLE</div>
+      </ons-toolbar>
+      <div class="content" style="text-align: center">
+        <!-- <div class="title-content"> -->
+        <div class="hb_selected">
+          <div class="hb_selected_title">就寝前</div>
+          <div class="hb-box">
+            <div class="hb-li">
+              <div class="hb_selected_subtitle">【自分のための「特別な時間」を過ごしたい】</div>
+              <div class="hb-osususume-img">
+                <img src="./gazou/book_nikkichou_diary.png" class="hb_selected_img">
+              </div>
+              <div class="hb-se">
+                <p>
+                  寝る前の自由な時間をただスマホを操作して寝るだけは勿体無いと思いませんか。<br>その時間を<span
+                  style="color: #ff0000; font-weight: bold;">「特別な時間」</span>にしましょう。<br>軽い散歩をしたり、一日を振り返り日記をつけたり、自分の身体のケアをするなどリラックスできると思えることがオススメです。<br>そしてたっぷり寝て最高の目覚めを迎えましょう。
+                </p>
+              </div>
+            </div>
+
+            <div class="hb-li">
+              <div class="hb_selected_subtitle">【「寝る前スマホ」は要注意】</div>
+              <div class="hb-osususume-img">
+                <img src="./gazou/nedoko_smartphone_woman.png" class="hb_selected_img">
+              </div>
+              <div class="hb-se">
+                <p>
+                  スマホなどから発せられる光によって、脳が「昼間だ」と錯覚し、脳が覚醒し、眠りが浅いなどの睡眠障害を引き起こしやすくなります。<br>対策としては睡眠２時間前はスマホを見ない、<br>２１時以降は画面の明るさを暗めに設定する、<br>ルーライトをカットするメガネやフィルターを使う、<br>部屋の照明を間接照明などに切替え、暗めにする<br>など<span
+                  style="color: #ff0000; font-weight: bold;">２１時以降は明るい光をなるべく浴びないように</span>しましょう。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hb-button">
+          <ons-button id="pop-button">戻る</ons-button>
+        </div>
       </div>
     </ons-page>
   </ons-template>

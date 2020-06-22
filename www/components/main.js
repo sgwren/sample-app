@@ -265,13 +265,13 @@ document.addEventListener('init', function (event) {
     // hb
     // r1hb
     if (radio1.checked) {
-      document.getElementById('span5-0').innerHTML = "マッサージ";
+      document.getElementById('span5-0').innerHTML = "【お風呂】";
     }
     if (radio1.checked) {
-      document.getElementById('span5').innerHTML = '<img src="./gazou/furo.png"  width="200"; alt="サンプル画像1">';
+      document.getElementById('span5').innerHTML = '<img src="./gazou/furo_shizuka.jpg" alt="サンプル画像1" id="span50" class="hb_img">';
     }
     if (radio1.checked) {
-      document.getElementById('span55-0').innerHTML = "お風呂でマッサージを行うときは、肩まで5分ほど浸かり、身体を充分温めてから始めましょう。 <br> のぼせないために、温度を38度から40度くらいの「普段よりも少しぬるいかな」と感じる温度に設定してください。 <br> 併せて、入浴時間は20分以内にしましょう。";
+      document.getElementById('span55-0').innerHTML = "お風呂で歌うと、1.5割増しぐらい上手くなりますよね<br>皆さんは何を歌いますか？";
     }
     // if (radio1.checked) {
     //   document.getElementById('u1-1').innerHTML = '<a href="https://www.homepage-tukurikata.com/hp/link.html">';
@@ -279,13 +279,13 @@ document.addEventListener('init', function (event) {
     // console.log("u1-1");
 
     // if(radio1.checked) {
-    //   document.getElementById('span5-1').innerHTML = '<img src="./gazou/furo.png"  width="100";  alt="サンプル画像1">';
+    //   document.getElementById('span5-1').innerHTML = '<img src="./gazou/furo.png"   alt="サンプル画像1">';
     // }
     // if(radio1.checked) {
     //   document.getElementById('span55-1').innerHTML ="お風呂に携帯の持ち込みはNG！ <br> リラックスタイムにしたいからと <br> 携帯電話をもちこんでいるあなた。<br> 画面からの光の刺激や、画面を見る首への負担は <br> リラックスして副交感神経の活動が優位になる入浴タイムにスマホを見ると、交感神経が活発に働き、自律神経が乱れやすくなる。"
     // }
     // if(radio1.checked) {
-    //   document.getElementById('span5-2').innerHTML = '<img src="./gazou/furo.png"  width="100"; alt="サンプル画像1">';
+    //   document.getElementById('span5-2').innerHTML = '<img src="./gazou/furo.png"  alt="サンプル画像1">';
     // }
     // if(radio1.checked) {
     //   document.getElementById('span55-2').innerHTML = "お風呂に携帯の持ち込みはNG <br> リラックスタイムにしたいからと <br> 携帯電話をもちこんでいるあなた。<br> 画面からの光の刺激や、画面を見る首への負担は <br> 実はとても大きいもの。<br> 入浴タイムにはデジタル機器から離れて、 <br> 心身共にリラックスするようにしましょう。<br> 携帯の見すぎで凝り固まった肩周りを <br> ストレッチするのもおすすめです！";
@@ -293,22 +293,22 @@ document.addEventListener('init', function (event) {
 
     // r2hb
     if (radio3.checked) {
-      document.getElementById('span6-0').innerHTML = "読書";
+      document.getElementById('span6-0').innerHTML = "【読書】";
     }
     if (radio3.checked) {
-      document.getElementById('span6').innerHTML = '<img src="./gazou/book_tsubuse_man.png" width="100"; alt="サンプル画像2">';
+      document.getElementById('span6').innerHTML = '<img src="./gazou/disney.jpg" alt="サンプル画像2" id="span60" class="hb_img">';
     }
     if (radio3.checked) {
-      document.getElementById('span66-0').innerHTML = "テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト";
+      document.getElementById('span66-0').innerHTML = "「宝島の海賊たちが盗んだ財宝よりも、<br>本には多くの宝が眠っている。<br>そして何よりも、宝を毎日味わうことが出来るのだ。」<br>ってウォルト・ディズニーが言ってました。";
     }
     // if(radio3.checked) {
-    //   document.getElementById('span6-1').innerHTML = '<img src="./gazou/book_tsubuse_man.png" width="100"; alt="サンプル画像2">';
+    //   document.getElementById('span6-1').innerHTML = '<img src="./gazou/book_tsubuse_man.png" alt="サンプル画像2">';
     // }
     // if(radio3.checked) {
     //   document.getElementById('span66-1').innerHTML = "テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト";
     // }
     // if(radio3.checked) {
-    //   document.getElementById('span6-2').innerHTML = '<img src="./gazou/book_tsubuse_man.png" width="100"; alt="サンプル画像2">';
+    //   document.getElementById('span6-2').innerHTML = '<img src="./gazou/book_tsubuse_man.png" alt="サンプル画像2">';
     // }
     // if(radio3.checked) {
     //   document.getElementById('span66-2').innerHTML = "テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト";
@@ -316,22 +316,22 @@ document.addEventListener('init', function (event) {
 
     // r3hb
     if (radio5.checked) {
-      document.getElementById('span7-0').innerHTML = "運動";
+      document.getElementById('span7-0').innerHTML = "【運動】";
     }
     if (radio5.checked) {
-      document.getElementById('span7').innerHTML = '<img src="./gazou/strech.png" width="100"; alt="サンプル画像5">';
+      document.getElementById('span7').innerHTML = '<img src="./gazou/coach_carter.jpg" alt="サンプル画像5" id="span70" class="hb_img">';
     }
     if (radio5.checked) {
-      document.getElementById('span77-0').innerHTML = "外出自粛が続き、運動不足が気になる人も多いと思います。 <br> フィットネス関連のスマートフォンアプリには、新型コロナ対策としてコンテンツを無料にするなど、特別対応中のものがあります。 <br> ゲーム感覚で毎日フィットネスできるアプリや、オンラインでジム仲間と励ましあえるアプリなどさまざま。 <br> この機会に生活スタイルにマッチするフィットネスアプリを見つけ、今後の生活習慣改善につなげてみてはいかがでしょうか。";
+      document.getElementById('span77-0').innerHTML = "「コーチ・カーター」を観たら運動と勉強をしたくなります。<br>これで全て解決です。";
     }
     // if(radio5.checked) {
-    //   document.getElementById('span7-1').innerHTML = '<img src="./gazou/strech.png" width="100"; alt="サンプル画像1">';
+    //   document.getElementById('span7-1').innerHTML = '<img src="./gazou/strech.png" alt="サンプル画像1">';
     // }
     // if(radio5.checked) {
     //   document.getElementById('span77-1').innerHTML ="お風呂に携帯の持ち込みはNG <br> リラックスタイムにしたいからと <br> 携帯電話をもちこんでいるあなた。<br> 画面からの光の刺激や、画面を見る首への負担は <br> 実はとても大きいもの。<br> 入浴タイムにはデジタル機器から離れて、 <br> 心身共にリラックスするようにしましょう。<br> 携帯の見すぎで凝り固まった肩周りを <br> ストレッチするのもおすすめです！"
     // }
     // if(radio5.checked) {
-    //   document.getElementById('span7-2').innerHTML = '<img src="./gazou/strech.png" width="100"; alt="サンプル画像1">';
+    //   document.getElementById('span7-2').innerHTML = '<img src="./gazou/strech.png" alt="サンプル画像1">';
     // }
     // if(radio5.checked) {
     //   document.getElementById('span77-2').innerHTML = "お風呂に携帯の持ち込みはNG <br> リラックスタイムにしたいからと <br> 携帯電話をもちこんでいるあなた。<br> 画面からの光の刺激や、画面を見る首への負担は <br> 実はとても大きいもの。<br> 入浴タイムにはデジタル機器から離れて、 <br> 心身共にリラックスするようにしましょう。<br> 携帯の見すぎで凝り固まった肩周りを <br> ストレッチするのもおすすめです！";
@@ -339,22 +339,22 @@ document.addEventListener('init', function (event) {
 
     // r4hb
     if (radio7.checked) {
-      document.getElementById('span8-0').innerHTML = "無理をせず、小さな目標を設定する";
+      document.getElementById('span8-0').innerHTML = "【目的】";
     }
     if (radio7.checked) {
-      document.getElementById('span8').innerHTML = '<img src="./gazou/yaruki_moeru_man.png" width="100"; alt="サンプル画像1">';
+      document.getElementById('span8').innerHTML = '<img src="./gazou/iwaki.jpg" alt="サンプル画像1" id="span80" class="hb_img">';
     }
     if (radio7.checked) {
-      document.getElementById('span88-0').innerHTML = "1日にSNSに使う時間が3時間なら2時間半に、1日でメッセージする時間が4時間なら3時間半にと、無理のない目標設定が大切だそうだ。 <br> 通話、メッセージ、SNSなどがある中から優先順位をつけて、それぞれに達成できそうな使用時間の制限を設けるんです」<br> 一方、自らによって自分のスマホが”没収”されていると感じないようにすることも大切なようだ。<br> 苦に成り過ぎないくらいのさじ加減で徐々に使用時間を減らすことにより、「ちょうど良い削減レベル」を見つけることができるそうだ。 <br> 心身共にリラックスするようにしましょう。<br> 「目標はスマホの使い方を進化させることであって、使用を完全にやめることではありません」";
+      document.getElementById('span88-0').innerHTML = "目標に目指していくあなた、<br>今輝いてますよ";
     }
     // if(radio7.checked) {
-    //   document.getElementById('span8-1').innerHTML = '<img src="./gazou/yaruki_moeru_man.png" width="100"; alt="サンプル画像1">';
+    //   document.getElementById('span8-1').innerHTML = '<img src="./gazou/yaruki_moeru_man.png" alt="サンプル画像1">';
     // }
     // if(radio7.checked) {
     //   document.getElementById('span88-1').innerHTML ="お風呂に携帯の持ち込みはNG <br> リラックスタイムにしたいからと <br> 携帯電話をもちこんでいるあなた。<br> 画面からの光の刺激や、画面を見る首への負担は <br> 実はとても大きいもの。<br> 入浴タイムにはデジタル機器から離れて、 <br> 心身共にリラックスするようにしましょう。<br> 携帯の見すぎで凝り固まった肩周りを <br> ストレッチするのもおすすめです！"
     // }
     // if(radio7.checked) {
-    //   document.getElementById('span8-2').innerHTML = '<img src="./gazou/yaruki_moeru_man.png" width="100"; alt="サンプル画像1">';
+    //   document.getElementById('span8-2').innerHTML = '<img src="./gazou/yaruki_moeru_man.png" alt="サンプル画像1">';
     // }
     // if(radio7.checked) {
     //   document.getElementById('span88-2').innerHTML = "お風呂に携帯の持ち込みはNG <br> リラックスタイムにしたいからと <br> 携帯電話をもちこんでいるあなた。<br> 画面からの光の刺激や、画面を見る首への負担は <br> 実はとても大きいもの。<br> 入浴タイムにはデジタル機器から離れて、 <br> 心身共にリラックスするようにしましょう。<br> 携帯の見すぎで凝り固まった肩周りを <br> ストレッチするのもおすすめです！";
@@ -362,22 +362,22 @@ document.addEventListener('init', function (event) {
 
     // r5hb
     if (radio9.checked) {
-      document.getElementById('span9-0').innerHTML = "朝やるといいことをする";
+      document.getElementById('span9-0').innerHTML = "【朝】";
     }
     if (radio9.checked) {
-      document.getElementById('span9').innerHTML = '<img src="./gazou/time_man1_asa.png" width="100"; alt="サンプル画像1">';
+      document.getElementById('span9').innerHTML = '<img src="./gazou/asa_3tetsu.jpg" alt="サンプル画像1" id="span90" class="hb_img">';
     }
     if (radio9.checked) {
-      document.getElementById('span99-0').innerHTML = "PCや携帯電話の液晶画面を見るとき、人はまばたきの回数が減り、疲労する。 <br> 疲れをためないためにも、朝のPCや携帯電話は、メールチェックなど最低限に <br> 前の日の楽しかった出来事を書き出す、仕事の企画のアイデアを考える、常温の水・たんぱく質を含んだ食事など朝やるといいことを意識しましょう";
+      document.getElementById('span99-0').innerHTML = "私は起きたら<br>ベッドの上で腹筋してます！！！（週に1回ほど）";
     }
     // if(radio9.checked) {
-    //   document.getElementById('span9-1').innerHTML = '<img src="./gazou/time_man1_asa.png" width="100"; alt="サンプル画像1">';
+    //   document.getElementById('span9-1').innerHTML = '<img src="./gazou/time_man1_asa.png" alt="サンプル画像1">';
     // }
     // if(radio9.checked) {
     //   document.getElementById('span99-1').innerHTML ="お風呂に携帯の持ち込みはNG <br> リラックスタイムにしたいからと <br> 携帯電話をもちこんでいるあなた。<br> 画面からの光の刺激や、画面を見る首への負担は <br> 実はとても大きいもの。<br> 入浴タイムにはデジタル機器から離れて、 <br> 心身共にリラックスするようにしましょう。<br> 携帯の見すぎで凝り固まった肩周りを <br> ストレッチするのもおすすめです！"
     // }
     // if(radio9.checked) {
-    //   document.getElementById('span9-2').innerHTML = '<img src="./gazou/time_man1_asa.png" width="100"; alt="サンプル画像1">';
+    //   document.getElementById('span9-2').innerHTML = '<img src="./gazou/time_man1_asa.png" alt="サンプル画像1">';
     // }
     // if(radio9.checked) {
     //   document.getElementById('span99-2').innerHTML = "お風呂に携帯の持ち込みはNG <br> リラックスタイムにしたいからと <br> 携帯電話をもちこんでいるあなた。<br> 画面からの光の刺激や、画面を見る首への負担は <br> 実はとても大きいもの。<br> 入浴タイムにはデジタル機器から離れて、 <br> 心身共にリラックスするようにしましょう。<br> 携帯の見すぎで凝り固まった肩周りを <br> ストレッチするのもおすすめです！";
@@ -385,22 +385,22 @@ document.addEventListener('init', function (event) {
 
     // r6hb
     if (radio11.checked) {
-      document.getElementById('span10-0').innerHTML = "スマホ依存対策アプリ";
+      document.getElementById('span10-0').innerHTML = "【ゲーム】";
     }
     if (radio11.checked) {
-      document.getElementById('span10').innerHTML = '<img src="./gazou/game_tetsuya_man.png" width="100"; alt="サンプル画像1">';
+      document.getElementById('span10').innerHTML = '<img src="./gazou/dqw.jpg" alt="サンプル画像1" id="span100" class="hb_img">';
     }
     if (radio11.checked) {
-      document.getElementById('span1010-0').innerHTML = "「作業に集中できる環境作りができる」として有名になったアプリやスマホに触らなければ木や魚が育つものなど多種多様なアプリがあります。 <br> ゲーム感覚で楽しめるタイプや、スマホ画面をロックして利用を制限してくれるものなど様々ですので、自分に合った、無理なく続けられるアプリを選ぶのが肝心です。";
+      document.getElementById('span1010-0').innerHTML = "ドラクエウォークをしたら運動にもなります！<br>一緒にやりましょう！";
     }
     // if(radio11.checked) {
-    //   document.getElementById('span10-1').innerHTML = '<img src="./gazou/game_tetsuya_man.png" width="100"; alt="サンプル画像1">';
+    //   document.getElementById('span10-1').innerHTML = '<img src="./gazou/game_tetsuya_man.png" alt="サンプル画像1">';
     // }
     // if(radio11.checked) {
     //   document.getElementById('span1010-1').innerHTML ="お風呂に携帯の持ち込みはNG <br> リラックスタイムにしたいからと <br> 携帯電話をもちこんでいるあなた。<br> 画面からの光の刺激や、画面を見る首への負担は <br> 実はとても大きいもの。<br> 入浴タイムにはデジタル機器から離れて、 <br> 心身共にリラックスするようにしましょう。<br> 携帯の見すぎで凝り固まった肩周りを <br> ストレッチするのもおすすめです！"
     // }
     // if(radio11.checked) {
-    //   document.getElementById('span10-2').innerHTML = '<img src="./gazou/game_tetsuya_man.png" width="100"; alt="サンプル画像1">';
+    //   document.getElementById('span10-2').innerHTML = '<img src="./gazou/game_tetsuya_man.png" alt="サンプル画像1">';
     // }
     // if(radio11.checked) {
     //   document.getElementById('span1010-2').innerHTML = "お風呂に携帯の持ち込みはNG <br> リラックスタイムにしたいからと <br> 携帯電話をもちこんでいるあなた。<br> 画面からの光の刺激や、画面を見る首への負担は <br> 実はとても大きいもの。<br> 入浴タイムにはデジタル機器から離れて、 <br> 心身共にリラックスするようにしましょう。<br> 携帯の見すぎで凝り固まった肩周りを <br> ストレッチするのもおすすめです！";
@@ -408,22 +408,22 @@ document.addEventListener('init', function (event) {
 
     // r7hb
     if (radio13.checked) {
-      document.getElementById('span11-0').innerHTML = "せっかくなら、有意義な時間に";
+      document.getElementById('span11-0').innerHTML = "【動画】";
     }
     if (radio13.checked) {
-      document.getElementById('span11').innerHTML = '<img src="./gazou/douga_haishin_youtuber.png" width="100"; alt="サンプル画像1">';
+      document.getElementById('span11').innerHTML = '<img src="./gazou/tom_brown.jpg" alt="サンプル画像1"id="span110" class="hb_img">';
     }
     if (radio13.checked) {
-      document.getElementById('span1111-0').innerHTML = "「どうせ見るなら、新しい学びのある有意義な時間にしたい」と思っている方も多いのではないでしょうか。 <br> 科学、文化、英語、教育まで、幅広いテーマの解説Youtubeチャンネルなどを観て、 <br> 得た知識をノートにまとめてみてはいかがでしょうか。";
+      document.getElementById('span1111-0').innerHTML = "「勉強系のYouTubeは観て満足してます！」<br>「ダメー」<br>（トム・ブラウン風に読んでください）";
     }
     // if(radio13.checked) {
-    //   document.getElementById('span11-1').innerHTML = '<img src="./gazou/douga_haishin_youtuber.png" width="100"; alt="サンプル画像1">';
+    //   document.getElementById('span11-1').innerHTML = '<img src="./gazou/douga_haishin_youtuber.png" alt="サンプル画像1">';
     // }
     // if(radio13.checked) {
     //   document.getElementById('span1111-1').innerHTML ="お風呂に携帯の持ち込みはNG <br> リラックスタイムにしたいからと <br> 携帯電話をもちこんでいるあなた。<br> 画面からの光の刺激や、画面を見る首への負担は <br> 実はとても大きいもの。<br> 入浴タイムにはデジタル機器から離れて、 <br> 心身共にリラックスするようにしましょう。<br> 携帯の見すぎで凝り固まった肩周りを <br> ストレッチするのもおすすめです！"
     // }
     // if(radio13.checked) {
-    //   document.getElementById('span11-2').innerHTML = '<img src="./gazou/douga_haishin_youtuber.png" width="100"; alt="サンプル画像1">';
+    //   document.getElementById('span11-2').innerHTML = '<img src="./gazou/douga_haishin_youtuber.png" alt="サンプル画像1">';
     // }
     // if(radio13.checked) {
     //   document.getElementById('span1111-2').innerHTML = "お風呂に携帯の持ち込みはNG <br> リラックスタイムにしたいからと <br> 携帯電話をもちこんでいるあなた。<br> 画面からの光の刺激や、画面を見る首への負担は <br> 実はとても大きいもの。<br> 入浴タイムにはデジタル機器から離れて、 <br> 心身共にリラックスするようにしましょう。<br> 携帯の見すぎで凝り固まった肩周りを <br> ストレッチするのもおすすめです！";
@@ -431,22 +431,22 @@ document.addEventListener('init', function (event) {
 
     // r8hb
     if (radio15.checked) {
-      document.getElementById('span12-0').innerHTML = "新しい趣味を見つけにいこう";
+      document.getElementById('span12-0').innerHTML = "【休日】";
     }
     if (radio15.checked) {
-      document.getElementById('span12').innerHTML = '<img src="./gazou/text_kyujitsu.png" width="100"; alt="サンプル画像1">';
+      document.getElementById('span12').innerHTML = '<img src="./gazou/syouten.png" alt="サンプル画像1"id="span120" class="hb_img">';
     }
     if (radio15.checked) {
-      document.getElementById('span1212-0').innerHTML = "休日の過ごし方を見つけるコツは「新しく挑戦してみたいことを書き出してみる」です。 <br> お金、時間、人数などを考えると、非現実的なものもあるかもしれません。 <br> しかし、一旦できない理由は考慮に入れず、やってみたいことを思いつく限り書き出しましょう。 <br> そもし新しくやってみたいことが見つからなければ、あなたが過去にやっていたことを書き出してみてください。<br> 興味がなくなってしまったことでも、時間が経って価値観が変わると、当時以上に打ち込める場合もあるものです。<br> 近な人の趣味や休日の過ごし方を真似してみるのも良い方法です。<br> 色々と考えてみると何か見つかるかもしれません";
+      document.getElementById('span1212-0').innerHTML = "「日曜日あるある」<br>笑点が始まった瞬間、<br>明日のことを考えてしまう";
     }
     // if(radio15.checked) {
-    //   document.getElementById('span12-1').innerHTML = '<img src="./gazou/text_kyujitsu.png" width="100"; alt="サンプル画像1">';
+    //   document.getElementById('span12-1').innerHTML = '<img src="./gazou/text_kyujitsu.png" alt="サンプル画像1">';
     // }
     // if(radio15.checked) {
     //   document.getElementById('span1212-1').innerHTML ="お風呂に携帯の持ち込みはNG <br> リラックスタイムにしたいからと <br> 携帯電話をもちこんでいるあなた。<br> 画面からの光の刺激や、画面を見る首への負担は <br> 実はとても大きいもの。<br> 入浴タイムにはデジタル機器から離れて、 <br> 心身共にリラックスするようにしましょう。<br> 携帯の見すぎで凝り固まった肩周りを <br> ストレッチするのもおすすめです！"
     // }
     // if(radio15.checked) {
-    //   document.getElementById('span12-2').innerHTML = '<img src="./gazou/text_kyujitsu.png" width="100"; alt="サンプル画像1">';
+    //   document.getElementById('span12-2').innerHTML = '<img src="./gazou/text_kyujitsu.png" alt="サンプル画像1">';
     // }
     // if(radio15.checked) {
     //   document.getElementById('span1212-2').innerHTML = "お風呂に携帯の持ち込みはNG <br> リラックスタイムにしたいからと <br> 携帯電話をもちこんでいるあなた。<br> 画面からの光の刺激や、画面を見る首への負担は <br> 実はとても大きいもの。<br> 入浴タイムにはデジタル機器から離れて、 <br> 心身共にリラックスするようにしましょう。<br> 携帯の見すぎで凝り固まった肩周りを <br> ストレッチするのもおすすめです！";
@@ -454,22 +454,22 @@ document.addEventListener('init', function (event) {
 
     // r9hb
     if (radio17.checked) {
-      document.getElementById('span13-0').innerHTML = "シンプルに危険です";
+      document.getElementById('span13-0').innerHTML = "【歩きスマホ】";
     }
     if (radio17.checked) {
-      document.getElementById('span13').innerHTML = '<img src="./gazou/walking2_man.png" width="100"; alt="サンプル画像1">';
+      document.getElementById('span13').innerHTML = '<img src="./gazou/aruki_sumaho.jpg" alt="サンプル画像1" id="span130" class="hb_img">';
     }
     if (radio17.checked) {
-      document.getElementById('span1313-0').innerHTML = "スマホの画面に夢中になっていると視覚情報が鈍感になり、周りに注意がいかなくなります。歩きスマホが危ないことは科学的にも立証されていて、普通に歩いているときなら100％避けられる障害物でも、歩きスマホをしている状態では10～20％の人がぶつかってしまいます。 <br> 歩いているときに美味しそうな飲食店や運命の人など新しい発見・出会いが待っているかもしれません <br> ";
+      document.getElementById('span1313-0').innerHTML = "歩きながらスマホを見ている人は、<br>沢山の人々に見られてますよ";
     }
     // if(radio17.checked) {
-    //   document.getElementById('span13-1').innerHTML = '<img src="./gazou/walking2_man.png" width="100"; alt="サンプル画像1">';
+    //   document.getElementById('span13-1').innerHTML = '<img src="./gazou/walking2_man.png" alt="サンプル画像1">';
     // }
     // if(radio17.checked) {
     //   document.getElementById('span1313-1').innerHTML ="お風呂に携帯の持ち込みはNG <br> リラックスタイムにしたいからと <br> 携帯電話をもちこんでいるあなた。<br> 画面からの光の刺激や、画面を見る首への負担は <br> 実はとても大きいもの。<br> 入浴タイムにはデジタル機器から離れて、 <br> 心身共にリラックスするようにしましょう。<br> 携帯の見すぎで凝り固まった肩周りを <br> ストレッチするのもおすすめです！"
     // }
     // if(radio17.checked) {
-    //   document.getElementById('span13-2').innerHTML = '<img src="./gazou/walking2_man.png" width="100"; alt="サンプル画像1">';
+    //   document.getElementById('span13-2').innerHTML = '<img src="./gazou/walking2_man.png" alt="サンプル画像1">';
     // }
     // if(radio17.checked) {
     //   document.getElementById('span1313-2').innerHTML = "お風呂に携帯の持ち込みはNG <br> リラックスタイムにしたいからと <br> 携帯電話をもちこんでいるあなた。<br> 画面からの光の刺激や、画面を見る首への負担は <br> 実はとても大きいもの。<br> 入浴タイムにはデジタル機器から離れて、 <br> 心身共にリラックスするようにしましょう。<br> 携帯の見すぎで凝り固まった肩周りを <br> ストレッチするのもおすすめです！";
@@ -477,22 +477,22 @@ document.addEventListener('init', function (event) {
 
     // r10hb
     if (radio19.checked) {
-      document.getElementById('span14-0').innerHTML = "「寝る前スマホ」による睡眠障害";
+      document.getElementById('span14-0').innerHTML = "【就寝前】";
     }
     if (radio19.checked) {
-      document.getElementById('span14').innerHTML = '<img src="./gazou/suimin_man.png" width="100"; alt="サンプル画像1">';
+      document.getElementById('span14').innerHTML = '<img src="./gazou/suimin_man.png" alt="サンプル画像1" id="span140" class="hb_img">';
     }
     if (radio19.checked) {
-      document.getElementById('span1414-0').innerHTML = "スマホ、パソコン、タブレットなどから発せられる光によって、脳が「昼間だ」と錯覚し、メラトニンの分泌量が抑制されます。すると、脳が覚醒し、眠りが浅いなどの睡眠障害を引き起こしやすくなります。 <br> リ睡眠前でもありますし、アクティブに動くより座ってできることや、ルーティーンでこなせてしまう軽い方法がおすすめです。<br>考え事をしながら寝ると、良質な睡眠を得られません。良くない夢に悩まされることもありますよね。日記をつけたり、スキンケア、軽い片付け、お気に入りの飲み物を飲んでみるなど「自分時間」を見つけると充実した一日の終わりになるかもしれません";
+      document.getElementById('span1414-0').innerHTML = "言うの凄く恥ずかしいのですが、<br>自分がアニメのキャラだったらとか<br>考えながら寝ると結構すぐ寝られます";
     }
     // if(radio19.checked) {
-    //   document.getElementById('span14-1').innerHTML = '<img src="./gazou/suimin_man.png" width="100"; alt="サンプル画像1">';
+    //   document.getElementById('span14-1').innerHTML = '<img src="./gazou/suimin_man.png" alt="サンプル画像1">';
     // }
     // if(radio19.checked) {
     //   document.getElementById('span1414-1').innerHTML ="お風呂に携帯の持ち込みはNG <br> リラックスタイムにしたいからと <br> 携帯電話をもちこんでいるあなた。<br> 画面からの光の刺激や、画面を見る首への負担は <br> 実はとても大きいもの。<br> 入浴タイムにはデジタル機器から離れて、 <br> 心身共にリラックスするようにしましょう。<br> 携帯の見すぎで凝り固まった肩周りを <br> ストレッチするのもおすすめです！"
     // }
     // if(radio19.checked) {
-    //   document.getElementById('span14-2').innerHTML = '<img src="./gazou/suimin_man.png" width="100"; alt="サンプル画像1">';
+    //   document.getElementById('span14-2').innerHTML = '<img src="./gazou/suimin_man.png" alt="サンプル画像1">';
     // }
     // if(radio19.checked) {
     //   document.getElementById('span1414-2').innerHTML = "お風呂に携帯の持ち込みはNG <br> リラックスタイムにしたいからと <br> 携帯電話をもちこんでいるあなた。<br> 画面からの光の刺激や、画面を見る首への負担は <br> 実はとても大きいもの。<br> 入浴タイムにはデジタル機器から離れて、 <br> 心身共にリラックスするようにしましょう。<br> 携帯の見すぎで凝り固まった肩周りを <br> ストレッチするのもおすすめです！";
@@ -515,17 +515,111 @@ document.addEventListener('init', function (event) {
 
   if (page.matches('#second-2-page')) {
 
-    page.querySelector('#push2-button').onclick = function () {
-      // var memoObj = [localStorage.setItem('memoObj', input_register.value)];
+    // page.querySelector('#push2-button').onclick = function () {
+      {
+        const question = document.getElementById("questions");
+        const choices = document.getElementById("choices");
+        const btn = document.getElementById("btn");
+        const result = document.getElementById("results");
+        const scoreLabel = document.querySelector("#results > p");
+      
+        const quizSet = shuffle([
+          {q: "なぜアラームのスヌーズは“9分”間隔？", c: ["デジタル表記の見間違いを防ぎ、2度寝の危機感を高める効果も期待できる", "ジョブズのラッキーナンバー", "設計ミスの名残"]},
+          {q: "「Google」の社名はどのようにして生まれた？", c: ["｢googol（グーゴル）｣のスペルミス", "創設者たちのイニシャル", "タンスの角に小指をぶつけたときに出た叫び声"]},
+          {q: "あれ？今スマホ鳴ってなかった？と思う時の現象名は？", c: ["「ファントム・バイブレーション・シンドローム（幻想振動症候群）」", "イマナッター現象", "天使のささやき"]},
+          {q: "「ながら運転」の反則金は？（普通車）", c: ["1万8000円", "6000円", "1万2000円"]},
+          {q: "「スマホは〇〇より汚い」と言われている？", c: ["トイレの便器", "エスカレーターの手すり", "エレベーターのボタン"]},
+          {q: "固定電話で番号の後ろに ”＃”を つけると？", c: ["早く繋がる", "電話の相手が話し中か調査してくれる", "声色を変えられる"]},
+          {q: "携帯電話から聞こえる声は？", c: ["パターン分けした音の見本の中から話し手の声に最も近い音", "本人の声", "コロッケさん"]},
+          {q: "水没したスマホを復活させる方法は？", c: ["お米の入った袋に一晩入れておく", "洗濯ネットに入れて日陰干し", "ありません"]},
+          {q: "「もしもし」の由来は？", c: ["「申します、申します」を縮めただけの略語", "「おいおい」が訛った言い方", "未だ解明されていない"]},
+          {q: "「♯8000」にかけると？", c: ["お子さんが急病を発して困った時、救急車を呼んで良いか小児科医師や看護師に相談できる", "消費者ホットライン", "海上保安庁へ通報"]},
+        ]);
+        let currentNum = 0;
+        let isAnswered;
+        let score = 0;
+      
+        
+      
+        function shuffle(arr) {
+          for (let i = arr.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [arr[j], arr[i]] = [arr[i], arr[j]];            //分割代入
+          }
+          return arr;
+        }
+      
+        function checkAnswer(li) {
+          if (isAnswered) {
+            return;
+          }
+          isAnswered = true;
+      
+          if (li.textContent === quizSet[currentNum].c[0]) {
+            li.classList.add("correct");
+            score++;
+          }else {
+            li.classList.add("wrong");
+          }
+      
+          btn.classList.remove("disabled");
+        }
+      
+        function setQuiz() {
+          isAnswered = false;
+      
+          question.textContent = quizSet[currentNum].q;
+      
+          while(choices.firstChild) {
+            choices.removeChild(choices.firstChild);
+          }
+      
+        const shuffledChoices = shuffle([...quizSet[currentNum].c]);
+        shuffledChoices.forEach(choice => {
+          const li = document.createElement("li");
+          li.textContent = choice;
+          li.addEventListener("click", () => {
+            checkAnswer(li);
+          });
+          choices.appendChild(li);
+        });
+      
+        if (currentNum === quizSet.length - 1) {
+          btn.textContent = "Show Score";
+      
+        }
+        }
+      
+        setQuiz();
+      
+        btn.addEventListener("click", () => {
+          if (btn.classList.contains("disabled")) {
+            return;
+          }
+          btn.classList.add("disabled");
+      
+          if (currentNum === quizSet.length - 1) {
+            // console.log(`Score: ${score} / ${quizSet.length}`);
+            scoreLabel.textContent = `Score: ${score} / ${quizSet.length}`;
+            result.classList.remove("hidden");
+          }else {
+            currentNum++;
+            setQuiz();
+          }
+        });
+      }
 
-      // localStorage.setItem('memoObj', input_register.value);
-      // localStorage.setItem('memoObj', JSON.stringify(input_register.value));
-      // document.querySelector('#navigator').pushPage('page2-3.html', { data: input_register.value });
-      // document.querySelector('#navigator').pushPage('page2-3.html', { data: JSON.stringify(input_register.value) });
 
-      return;
-    };
-    console.log(localStorage.setItem('memoObj', JSON.stringify(input_register.value)));
+    // var memoObj = [localStorage.setItem('memoObj', input_register.value)];
+
+    // localStorage.setItem('memoObj', input_register.value);
+    // localStorage.setItem('memoObj', JSON.stringify(input_register.value));
+    // document.querySelector('#navigator').pushPage('page2-3.html', { data: input_register.value });
+    // document.querySelector('#navigator').pushPage('page2-3.html', { data: JSON.stringify(input_register.value) });
+
+    // return;
+    // };
+    // console.log(localStorage.setItem('memoObj', JSON.stringify(input_register.value)));
 
 
 
@@ -543,9 +637,9 @@ document.addEventListener('init', function (event) {
 
     // document.getElementById("output_register").innerHTML = JSON.parse(localStorage.getItem('memoObj'));
     // document.getElementById("output_register").innerHTML = localStorage.setItem('memoObj', JSON.stringify(input_register.value));
-    document.getElementById("output_register").innerHTML = input_register.value;
-    console.log(document.getElementById("output_register"));
-    return;
+    // document.getElementById("output_register").innerHTML = input_register.value;
+    // console.log(document.getElementById("output_register"));
+    // return;
     // }
     // }
 
@@ -565,7 +659,117 @@ document.addEventListener('init', function (event) {
 
   // }
 
-  
+  if (page.matches('#second-3-page')) {
+    page.querySelector('#bath-button').onclick = function () {
+      document.querySelector('#navigator').pushPage('bath-page.html');
+    };
+  }
+  if (page.matches('#bath-page')) {
+    page.querySelector('#pop-button').onclick = function () {
+      document.querySelector('#navigator').popPage();
+    };
+  }
+
+  if (page.matches('#second-3-page')) {
+    page.querySelector('#book-button').onclick = function () {
+      document.querySelector('#navigator').pushPage('book-page.html');
+    };
+  }
+  if (page.matches('#book-page')) {
+    page.querySelector('#pop-button').onclick = function () {
+      document.querySelector('#navigator').popPage();
+    };
+  }
+
+  if (page.matches('#second-3-page')) {
+    page.querySelector('#exercise-button').onclick = function () {
+      document.querySelector('#navigator').pushPage('exercise-page.html');
+    };
+  }
+  if (page.matches('#exercise-page')) {
+    page.querySelector('#pop-button').onclick = function () {
+      document.querySelector('#navigator').popPage();
+    };
+  }
+
+  if (page.matches('#second-3-page')) {
+    page.querySelector('#todo-button').onclick = function () {
+      document.querySelector('#navigator').pushPage('todo-page.html');
+    };
+  }
+  if (page.matches('#todo-page')) {
+    page.querySelector('#pop-button').onclick = function () {
+      document.querySelector('#navigator').popPage();
+    };
+  }
+
+  if (page.matches('#second-3-page')) {
+    page.querySelector('#morning-button').onclick = function () {
+      document.querySelector('#navigator').pushPage('morning-page.html');
+    };
+  }
+  if (page.matches('#morning-page')) {
+    page.querySelector('#pop-button').onclick = function () {
+      document.querySelector('#navigator').popPage();
+    };
+  }
+
+  if (page.matches('#second-3-page')) {
+    page.querySelector('#game-button').onclick = function () {
+      document.querySelector('#navigator').pushPage('game-page.html');
+    };
+  }
+  if (page.matches('#game-page')) {
+    page.querySelector('#pop-button').onclick = function () {
+      document.querySelector('#navigator').popPage();
+    };
+  }
+
+  if (page.matches('#second-3-page')) {
+    page.querySelector('#movie-button').onclick = function () {
+      document.querySelector('#navigator').pushPage('movie-page.html');
+    };
+  }
+  if (page.matches('#movie-page')) {
+    page.querySelector('#pop-button').onclick = function () {
+      document.querySelector('#navigator').popPage();
+    };
+  }
+
+  if (page.matches('#second-3-page')) {
+    page.querySelector('#holiday-button').onclick = function () {
+      document.querySelector('#navigator').pushPage('holiday-page.html');
+    };
+  }
+  if (page.matches('#holiday-page')) {
+    page.querySelector('#pop-button').onclick = function () {
+      document.querySelector('#navigator').popPage();
+    };
+  }
+
+  if (page.matches('#second-3-page')) {
+    page.querySelector('#walk-button').onclick = function () {
+      document.querySelector('#navigator').pushPage('walk-page.html');
+    };
+  }
+  if (page.matches('#walk-page')) {
+    page.querySelector('#pop-button').onclick = function () {
+      document.querySelector('#navigator').popPage();
+    };
+  }
+
+  if (page.matches('#second-3-page')) {
+    page.querySelector('#sleep-button').onclick = function () {
+      document.querySelector('#navigator').pushPage('sleep-page.html');
+    };
+  }
+  if (page.matches('#sleep-page')) {
+    page.querySelector('#pop-button').onclick = function () {
+      document.querySelector('#navigator').popPage();
+    };
+  }
+
+
 });
 
 
