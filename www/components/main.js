@@ -259,7 +259,7 @@ document.addEventListener('init', function (event) {
       document.getElementById("span4").innerHTML = "現状では、スマホへの依存は心配しなくても大丈夫そう。 <br> ただし、スマホとの接触時間が増えるにつれ、少しずつスマホ依存の傾向が出てきているようです。 最近、暇をつぶす際は、まずスマホを手に取っていませんか？ それが実はスマホ依存への第一歩。 <br> 暇なときは本を読む、スマホだけでなくパソコンも活用するなどして、メリハリをつけてスマホを使って。そうすれば、スマホ依存度は変わってきます。";
 
     } else if (sum >= 0) {
-      document.getElementById("span4").innerHTML = "あなたにとってスマホはあくまでツール。 <br> 必要なときに利用していくものであって、依存するような対象ではないようです。現在のところ、上手にスマホを活用することができていると言えそうです。 <br>ただし、これから先、仕事でもスマホを活用する頻度が高まってくると、状況が変わる可能性も。仕事で使う機会が増えたらプライベートでは活用度を下げるなど、今後もうまくスマホと付き合っていって。！";
+      document.getElementById("span4").innerHTML = "あなたにとってスマホはあくまでツール。 <br> 必要なときに利用していくものであって、依存するような対象ではないようです。現在のところ、上手にスマホを活用することができていると言えそうです。 <br>ただし、これから先、仕事でもスマホを活用する頻度が高まってくると、状況が変わる可能性も。仕事で使う機会が増えたらプライベートでは活用度を下げるなど、今後もうまくスマホと付き合っていって！";
     }
 
     // hb
@@ -516,64 +516,64 @@ document.addEventListener('init', function (event) {
   if (page.matches('#second-2-page')) {
 
     // page.querySelector('#push2-button').onclick = function () {
-      {
-        const question = document.getElementById("questions");
-        const choices = document.getElementById("choices");
-        const btn = document.getElementById("btn");
-        const result = document.getElementById("results");
-        const scoreLabel = document.querySelector("#results > p");
-      
-        const quizSet = shuffle([
-          {q: "なぜアラームのスヌーズは“9分”間隔？", c: ["デジタル表記の見間違いを防ぎ、2度寝の危機感を高める効果も期待できる", "ジョブズのラッキーナンバー", "設計ミスの名残"]},
-          {q: "「Google」の社名はどのようにして生まれた？", c: ["｢googol（グーゴル）｣のスペルミス", "創設者たちのイニシャル", "タンスの角に小指をぶつけたときに出た叫び声"]},
-          {q: "あれ？今スマホ鳴ってなかった？と思う時の現象名は？", c: ["「ファントム・バイブレーション・シンドローム（幻想振動症候群）」", "イマナッター現象", "天使のささやき"]},
-          {q: "「ながら運転」の反則金は？（普通車）", c: ["1万8000円", "6000円", "1万2000円"]},
-          {q: "「スマホは〇〇より汚い」と言われている？", c: ["トイレの便器", "エスカレーターの手すり", "エレベーターのボタン"]},
-          {q: "固定電話で番号の後ろに ”＃”を つけると？", c: ["早く繋がる", "電話の相手が話し中か調査してくれる", "声色を変えられる"]},
-          {q: "携帯電話から聞こえる声は？", c: ["パターン分けした音の見本の中から話し手の声に最も近い音", "本人の声", "コロッケさん"]},
-          {q: "水没したスマホを復活させる方法は？", c: ["お米の入った袋に一晩入れておく", "洗濯ネットに入れて日陰干し", "ありません"]},
-          {q: "「もしもし」の由来は？", c: ["「申します、申します」を縮めただけの略語", "「おいおい」が訛った言い方", "未だ解明されていない"]},
-          {q: "「♯8000」にかけると？", c: ["お子さんが急病を発して困った時、救急車を呼んで良いか小児科医師や看護師に相談できる", "消費者ホットライン", "海上保安庁へ通報"]},
-        ]);
-        let currentNum = 0;
-        let isAnswered;
-        let score = 0;
-      
-        
-      
-        function shuffle(arr) {
-          for (let i = arr.length - 1; i > 0; i--) {
-            const j = Math.floor(Math.random() * (i + 1));
-            [arr[j], arr[i]] = [arr[i], arr[j]];            //分割代入
-          }
-          return arr;
+    {
+      const question = document.getElementById("questions");
+      const choices = document.getElementById("choices");
+      const btn = document.getElementById("btn");
+      const result = document.getElementById("results");
+      const scoreLabel = document.querySelector("#results > p");
+
+      const quizSet = shuffle([
+        { q: "なぜアラームのスヌーズは“9分”間隔？", c: ["デジタル表記の見間違いを防ぎ、2度寝の危機感を高める効果も期待できる", "ジョブズのラッキーナンバー", "設計ミスの名残"] },
+        { q: "「Google」の社名はどのようにして生まれた？", c: ["｢googol（グーゴル）｣のスペルミス", "創設者たちのイニシャル", "タンスの角に小指をぶつけたときに出た叫び声"] },
+        { q: "あれ？今スマホ鳴ってなかった？と思う時の現象名は？", c: ["「ファントム・バイブレーション・シンドローム（幻想振動症候群）」", "イマナッター現象", "天使のささやき"] },
+        { q: "「ながら運転」の反則金は？（普通車）", c: ["1万8000円", "6000円", "1万2000円"] },
+        { q: "「スマホは〇〇より汚い」と言われている？", c: ["トイレの便器", "エスカレーターの手すり", "エレベーターのボタン"] },
+        { q: "固定電話で番号の後ろに ”＃”を つけると？", c: ["早く繋がる", "電話の相手が話し中か調査してくれる", "声色を変えられる"] },
+        { q: "携帯電話から聞こえる声は？", c: ["パターン分けした音の見本の中から話し手の声に最も近い音", "本人の声", "コロッケさん"] },
+        { q: "水没したスマホを復活させる方法は？", c: ["お米の入った袋に一晩入れておく", "洗濯ネットに入れて日陰干し", "ありません"] },
+        { q: "「もしもし」の由来は？", c: ["「申します、申します」を縮めただけの略語", "「おいおい」が訛った言い方", "未だ解明されていない"] },
+        { q: "「♯8000」にかけると？", c: ["お子さんが急病を発して困った時、救急車を呼んで良いか小児科医師や看護師に相談できる", "消費者ホットライン", "海上保安庁へ通報"] },
+      ]);
+      let currentNum = 0;
+      let isAnswered;
+      let score = 0;
+
+
+
+      function shuffle(arr) {
+        for (let i = arr.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [arr[j], arr[i]] = [arr[i], arr[j]];            //分割代入
         }
-      
-        function checkAnswer(li) {
-          if (isAnswered) {
-            return;
-          }
-          isAnswered = true;
-      
-          if (li.textContent === quizSet[currentNum].c[0]) {
-            li.classList.add("correct");
-            score++;
-          }else {
-            li.classList.add("wrong");
-          }
-      
-          btn.classList.remove("disabled");
+        return arr;
+      }
+
+      function checkAnswer(li) {
+        if (isAnswered) {
+          return;
         }
-      
-        function setQuiz() {
-          isAnswered = false;
-      
-          question.textContent = quizSet[currentNum].q;
-      
-          while(choices.firstChild) {
-            choices.removeChild(choices.firstChild);
-          }
-      
+        isAnswered = true;
+
+        if (li.textContent === quizSet[currentNum].c[0]) {
+          li.classList.add("correct");
+          score++;
+        } else {
+          li.classList.add("wrong");
+        }
+
+        btn.classList.remove("disabled");
+      }
+
+      function setQuiz() {
+        isAnswered = false;
+
+        question.textContent = quizSet[currentNum].q;
+
+        while (choices.firstChild) {
+          choices.removeChild(choices.firstChild);
+        }
+
         const shuffledChoices = shuffle([...quizSet[currentNum].c]);
         shuffledChoices.forEach(choice => {
           const li = document.createElement("li");
@@ -583,31 +583,31 @@ document.addEventListener('init', function (event) {
           });
           choices.appendChild(li);
         });
-      
+
         if (currentNum === quizSet.length - 1) {
           btn.textContent = "Show Score";
-      
+
         }
-        }
-      
-        setQuiz();
-      
-        btn.addEventListener("click", () => {
-          if (btn.classList.contains("disabled")) {
-            return;
-          }
-          btn.classList.add("disabled");
-      
-          if (currentNum === quizSet.length - 1) {
-            // console.log(`Score: ${score} / ${quizSet.length}`);
-            scoreLabel.textContent = `Score: ${score} / ${quizSet.length}`;
-            result.classList.remove("hidden");
-          }else {
-            currentNum++;
-            setQuiz();
-          }
-        });
       }
+
+      setQuiz();
+
+      btn.addEventListener("click", () => {
+        if (btn.classList.contains("disabled")) {
+          return;
+        }
+        btn.classList.add("disabled");
+
+        if (currentNum === quizSet.length - 1) {
+          // console.log(`Score: ${score} / ${quizSet.length}`);
+          scoreLabel.textContent = `Score: ${score} / ${quizSet.length}`;
+          result.classList.remove("hidden");
+        } else {
+          currentNum++;
+          setQuiz();
+        }
+      });
+    }
 
 
     // var memoObj = [localStorage.setItem('memoObj', input_register.value)];
